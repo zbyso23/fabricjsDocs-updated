@@ -1,0 +1,551 @@
+{
+  "file": "fabric.StaticCanvas.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new StaticCanvas",
+      "hash": "#StaticCanvas",
+      "desc": "Static canvas class"
+    },
+    {
+      "section": "Members",
+      "name": "EMPTY_JSON",
+      "hash": "#.EMPTY_JSON",
+      "desc": null
+    },
+    {
+      "section": "Members",
+      "name": "allowTouchScrolling",
+      "hash": "#allowTouchScrolling",
+      "desc": "Indicates whether the browser can be scrolled when using a touchscreen and dragging on the canvas"
+    },
+    {
+      "section": "Members",
+      "name": "backgroundColor",
+      "hash": "#backgroundColor",
+      "desc": "Background color of canvas instance. Should be set via"
+    },
+    {
+      "section": "Members",
+      "name": "backgroundImage",
+      "hash": "#backgroundImage",
+      "desc": "Background image of canvas instance. since 2.4.0 image caching is active, please when putting an image as background, add to the canvas property a reference to the canvas it is on. Otherwise the image cannot detect the zoom vale. As an alternative you can disable image objectCaching"
+    },
+    {
+      "section": "Members",
+      "name": "backgroundVpt",
+      "hash": "#backgroundVpt",
+      "desc": "if set to false background image is not affected by viewport transform"
+    },
+    {
+      "section": "Members",
+      "name": "clipPath",
+      "hash": "#clipPath",
+      "desc": "a fabricObject that, without stroke define a clipping area with their shape. filled in black the clipPath object gets used when the canvas has rendered, and the context is placed in the top left corner of the canvas. clipPath will clip away controls, if you do not want this to happen use controlsAboveOverlay = true"
+    },
+    {
+      "section": "Members",
+      "name": "controlsAboveOverlay",
+      "hash": "#controlsAboveOverlay",
+      "desc": "Indicates whether object controls (borders/controls) are rendered above overlay image"
+    },
+    {
+      "section": "Members",
+      "name": "enableRetinaScaling",
+      "hash": "#enableRetinaScaling",
+      "desc": "When true, canvas is scaled by devicePixelRatio for better rendering on retina screens"
+    },
+    {
+      "section": "Members",
+      "name": "FX_DURATION",
+      "hash": "#FX_DURATION",
+      "desc": "Animation duration (in ms) for fx* methods"
+    },
+    {
+      "section": "Members",
+      "name": "imageSmoothingEnabled",
+      "hash": "#imageSmoothingEnabled",
+      "desc": "Indicates whether this canvas will use image smoothing, this is on by default in browsers"
+    },
+    {
+      "section": "Members",
+      "name": "includeDefaultValues",
+      "hash": "#includeDefaultValues",
+      "desc": "Indicates whether toObject/toDatalessObject should include default values if set to false, takes precedence over the object value."
+    },
+    {
+      "section": "Members",
+      "name": "overlayColor",
+      "hash": "#overlayColor",
+      "desc": "Overlay color of canvas instance. Should be set via"
+    },
+    {
+      "section": "Members",
+      "name": "overlayImage",
+      "hash": "#overlayImage",
+      "desc": "Overlay image of canvas instance. since 2.4.0 image caching is active, please when putting an image as overlay, add to the canvas property a reference to the canvas it is on. Otherwise the image cannot detect the zoom vale. As an alternative you can disable image objectCaching"
+    },
+    {
+      "section": "Members",
+      "name": "overlayVpt",
+      "hash": "#overlayVpt",
+      "desc": "if set to false overlya image is not affected by viewport transform"
+    },
+    {
+      "section": "Members",
+      "name": "renderOnAddRemove",
+      "hash": "#renderOnAddRemove",
+      "desc": "Indicates whether"
+    },
+    {
+      "section": "Members",
+      "name": "skipOffscreen",
+      "hash": "#skipOffscreen",
+      "desc": "Based on vptCoords and object.aCoords, skip rendering of objects that are not included in current viewport. May greatly help in applications with crowded canvas and use of zoom/pan If One of the corner of the bounding box of the object is on the canvas the objects get rendered."
+    },
+    {
+      "section": "Members",
+      "name": "stateful",
+      "hash": "#stateful",
+      "desc": "Indicates whether objects' state should be saved"
+    },
+    {
+      "section": "Members",
+      "name": "svgViewportTransformation",
+      "hash": "#svgViewportTransformation",
+      "desc": "When true, getSvgTransform() will apply the StaticCanvas.viewportTransform to the SVG transformation. When true, a zoomed canvas will then produce zoomed SVG output."
+    },
+    {
+      "section": "Members",
+      "name": "viewportTransform",
+      "hash": "#viewportTransform",
+      "desc": "The transformation (a Canvas 2D API transform matrix) which focuses the viewport"
+    },
+    {
+      "section": "Members",
+      "name": "vptCoords",
+      "hash": "#vptCoords",
+      "desc": "Describe canvas element extension over design properties are tl,tr,bl,br. if canvas is not zoomed/panned those points are the four corner of canvas if canvas is viewportTransformed you those points indicate the extension of canvas element in plain untrasformed coordinates The coordinates get updated with @method calcViewportBoundaries."
+    },
+    {
+      "section": "Methods",
+      "name": "supports",
+      "hash": "#.supports",
+      "desc": "Provides a way to check support of some of the canvas methods (either those of HTMLCanvasElement itself, or rendering context)"
+    },
+    {
+      "section": "Methods",
+      "name": "absolutePan",
+      "hash": "#absolutePan",
+      "desc": "Pan viewport so as to place point at top left corner of canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "add",
+      "hash": "#add",
+      "desc": "Adds objects to collection, Canvas or Group, then renders canvas (if `renderOnAddRemove` is not `false`). in case of Group no changes to bounding box are made. Objects should be instances of (or inherit from) fabric.Object Use of this function is highly discouraged for groups. you can add a bunch of objects with the add method but then you NEED to run a addWithUpdate call for the Group class or position/bbox will be wrong."
+    },
+    {
+      "section": "Methods",
+      "name": "bringForward",
+      "hash": "#bringForward",
+      "desc": "Moves an object or a selection up in stack of drawn objects An optional parameter, intersecting allows to move the object in front of the first intersecting object. Where intersection is calculated with bounding box. If no intersection is found, there will not be change in the stack."
+    },
+    {
+      "section": "Methods",
+      "name": "bringToFront",
+      "hash": "#bringToFront",
+      "desc": "Moves an object or the objects of a multiple selection to the top of the stack of drawn objects"
+    },
+    {
+      "section": "Methods",
+      "name": "calcOffset",
+      "hash": "#calcOffset",
+      "desc": "Calculates canvas element offset relative to the document This method is also attached as \"resize\" event handler of window"
+    },
+    {
+      "section": "Methods",
+      "name": "calcViewportBoundaries",
+      "hash": "#calcViewportBoundaries",
+      "desc": "Calculate the position of the 4 corner of canvas with current viewportTransform. helps to determinate when an object is in the current rendering viewport using object absolute coordinates ( aCoords )"
+    },
+    {
+      "section": "Methods",
+      "name": "centerObject",
+      "hash": "#centerObject",
+      "desc": "Centers object vertically and horizontally in the canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "centerObjectH",
+      "hash": "#centerObjectH",
+      "desc": "Centers object horizontally in the canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "centerObjectV",
+      "hash": "#centerObjectV",
+      "desc": "Centers object vertically in the canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "clear",
+      "hash": "#clear",
+      "desc": "Clears all contexts (background, main, top) of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "clearContext",
+      "hash": "#clearContext",
+      "desc": "Clears specified context of canvas element"
+    },
+    {
+      "section": "Methods",
+      "name": "clone",
+      "hash": "#clone",
+      "desc": "Clones canvas instance"
+    },
+    {
+      "section": "Methods",
+      "name": "cloneWithoutData",
+      "hash": "#cloneWithoutData",
+      "desc": "Clones canvas instance without cloning existing data. This essentially copies canvas dimensions, clipping properties, etc. but leaves data empty (so that you can populate it with your own)"
+    },
+    {
+      "section": "Methods",
+      "name": "complexity",
+      "hash": "#complexity",
+      "desc": "Returns number representation of a collection complexity"
+    },
+    {
+      "section": "Methods",
+      "name": "contains",
+      "hash": "#contains",
+      "desc": "Returns true if collection contains an object"
+    },
+    {
+      "section": "Methods",
+      "name": "createSVGFontFacesMarkup",
+      "hash": "#createSVGFontFacesMarkup",
+      "desc": "Creates markup containing SVG font faces, font URLs for font faces must be collected by developers and are not extracted from the DOM by fabricjs"
+    },
+    {
+      "section": "Methods",
+      "name": "createSVGRefElementsMarkup",
+      "hash": "#createSVGRefElementsMarkup",
+      "desc": "Creates markup containing SVG referenced elements like patterns, gradients etc."
+    },
+    {
+      "section": "Methods",
+      "name": "dispose",
+      "hash": "#dispose",
+      "desc": "Clears a canvas element and dispose objects"
+    },
+    {
+      "section": "Methods",
+      "name": "drawClipPathOnCanvas",
+      "hash": "#drawClipPathOnCanvas",
+      "desc": "Paint the cached clipPath on the lowerCanvasEl"
+    },
+    {
+      "section": "Methods",
+      "name": "fire",
+      "hash": "#fire",
+      "desc": "Fires event with an optional options object"
+    },
+    {
+      "section": "Methods",
+      "name": "forEachObject",
+      "hash": "#forEachObject",
+      "desc": "Executes given function for each object in this group"
+    },
+    {
+      "section": "Methods",
+      "name": "fxCenterObjectH",
+      "hash": "#fxCenterObjectH",
+      "desc": "Centers object horizontally with animation."
+    },
+    {
+      "section": "Methods",
+      "name": "fxCenterObjectV",
+      "hash": "#fxCenterObjectV",
+      "desc": "Centers object vertically with animation."
+    },
+    {
+      "section": "Methods",
+      "name": "fxRemove",
+      "hash": "#fxRemove",
+      "desc": "Same as `fabric.Canvas#remove` but animated"
+    },
+    {
+      "section": "Methods",
+      "name": "fxStraightenObject",
+      "hash": "#fxStraightenObject",
+      "desc": "Same as fabric.Canvas.prototype.straightenObject, but animated"
+    },
+    {
+      "section": "Methods",
+      "name": "getCenter",
+      "hash": "#getCenter",
+      "desc": "Returns coordinates of a center of canvas. Returned value is an object with top and left properties"
+    },
+    {
+      "section": "Methods",
+      "name": "getContext",
+      "hash": "#getContext",
+      "desc": "Returns context of canvas where objects are drawn"
+    },
+    {
+      "section": "Methods",
+      "name": "getElement",
+      "hash": "#getElement",
+      "desc": "Returns &lt;canvas> element corresponding to this instance"
+    },
+    {
+      "section": "Methods",
+      "name": "getHeight",
+      "hash": "#getHeight",
+      "desc": "Returns canvas height (in px)"
+    },
+    {
+      "section": "Methods",
+      "name": "getObjects",
+      "hash": "#getObjects",
+      "desc": "Returns an array of children objects of this instance Type parameter introduced in 1.3.10 since 2.3.5 this method return always a COPY of the array;"
+    },
+    {
+      "section": "Methods",
+      "name": "getVpCenter",
+      "hash": "#getVpCenter",
+      "desc": "Calculate the point in canvas that correspond to the center of actual viewport."
+    },
+    {
+      "section": "Methods",
+      "name": "getWidth",
+      "hash": "#getWidth",
+      "desc": "Returns canvas width (in px)"
+    },
+    {
+      "section": "Methods",
+      "name": "getZoom",
+      "hash": "#getZoom",
+      "desc": "Returns canvas zoom level"
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "insertAt",
+      "hash": "#insertAt",
+      "desc": "Inserts an object into collection at specified index, then renders canvas (if `renderOnAddRemove` is not `false`) An object should be an instance of (or inherit from) fabric.Object Use of this function is highly discouraged for groups. you can add a bunch of objects with the insertAt method but then you NEED to run a addWithUpdate call for the Group class or position/bbox will be wrong."
+    },
+    {
+      "section": "Methods",
+      "name": "isEmpty",
+      "hash": "#isEmpty",
+      "desc": "Returns true if collection contains no objects"
+    },
+    {
+      "section": "Methods",
+      "name": "item",
+      "hash": "#item",
+      "desc": "Returns object at specified index"
+    },
+    {
+      "section": "Methods",
+      "name": "loadFromJSON",
+      "hash": "#loadFromJSON",
+      "desc": "Populates canvas with data from the specified JSON. JSON format must conform to the one of"
+    },
+    {
+      "section": "Methods",
+      "name": "moveTo",
+      "hash": "#moveTo",
+      "desc": "Moves an object to specified level in stack of drawn objects"
+    },
+    {
+      "section": "Methods",
+      "name": "relativePan",
+      "hash": "#relativePan",
+      "desc": "Pans viewpoint relatively"
+    },
+    {
+      "section": "Methods",
+      "name": "remove",
+      "hash": "#remove",
+      "desc": "Removes objects from a collection, then renders canvas (if `renderOnAddRemove` is not `false`)"
+    },
+    {
+      "section": "Methods",
+      "name": "renderAll",
+      "hash": "#renderAll",
+      "desc": "Renders the canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "renderCanvas",
+      "hash": "#renderCanvas",
+      "desc": "Renders background, objects, overlay and controls."
+    },
+    {
+      "section": "Methods",
+      "name": "requestRenderAll",
+      "hash": "#requestRenderAll",
+      "desc": "Append a renderAll request to next animation frame. unless one is already in progress, in that case nothing is done a boolean flag will avoid appending more."
+    },
+    {
+      "section": "Methods",
+      "name": "sendBackwards",
+      "hash": "#sendBackwards",
+      "desc": "Moves an object or a selection down in stack of drawn objects An optional parameter, intersecting allows to move the object in behind the first intersecting object. Where intersection is calculated with bounding box. If no intersection is found, there will not be change in the stack."
+    },
+    {
+      "section": "Methods",
+      "name": "sendToBack",
+      "hash": "#sendToBack",
+      "desc": "Moves an object or the objects of a multiple selection to the bottom of the stack of drawn objects"
+    },
+    {
+      "section": "Methods",
+      "name": "setBackgroundColor",
+      "hash": "#setBackgroundColor",
+      "desc": "Sets"
+    },
+    {
+      "section": "Methods",
+      "name": "setBackgroundImage",
+      "hash": "#setBackgroundImage",
+      "desc": "Sets"
+    },
+    {
+      "section": "Methods",
+      "name": "setDimensions",
+      "hash": "#setDimensions",
+      "desc": "Sets dimensions (width, height) of this canvas instance. when options.cssOnly flag active you should also supply the unit of measure (px/%/em)"
+    },
+    {
+      "section": "Methods",
+      "name": "setHeight",
+      "hash": "#setHeight",
+      "desc": "Sets height of this canvas instance"
+    },
+    {
+      "section": "Methods",
+      "name": "setOverlayColor",
+      "hash": "#setOverlayColor",
+      "desc": "Sets"
+    },
+    {
+      "section": "Methods",
+      "name": "setOverlayImage",
+      "hash": "#setOverlayImage",
+      "desc": "Sets"
+    },
+    {
+      "section": "Methods",
+      "name": "setViewportTransform",
+      "hash": "#setViewportTransform",
+      "desc": "Sets viewport transformation of this canvas instance"
+    },
+    {
+      "section": "Methods",
+      "name": "setWidth",
+      "hash": "#setWidth",
+      "desc": "Sets width of this canvas instance"
+    },
+    {
+      "section": "Methods",
+      "name": "setZoom",
+      "hash": "#setZoom",
+      "desc": "Sets zoom level of this canvas instance"
+    },
+    {
+      "section": "Methods",
+      "name": "size",
+      "hash": "#size",
+      "desc": "Returns a size of a collection (i.e: length of an array containing its objects)"
+    },
+    {
+      "section": "Methods",
+      "name": "straightenObject",
+      "hash": "#straightenObject",
+      "desc": "Straightens object, then rerenders canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "toCanvasElement",
+      "hash": "#toCanvasElement",
+      "desc": "Create a new HTMLCanvas element painted with the current canvas content. No need to resize the actual one or repaint it. Will transfer object ownership to a new canvas, paint it, and set everything back. This is an intermediary step used to get to a dataUrl but also it is useful to create quick image copies of a canvas without passing for the dataUrl string"
+    },
+    {
+      "section": "Methods",
+      "name": "toDatalessJSON",
+      "hash": "#toDatalessJSON",
+      "desc": "Returns dataless JSON representation of canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "toDatalessObject",
+      "hash": "#toDatalessObject",
+      "desc": "Returns dataless object representation of canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "toDataURL",
+      "hash": "#toDataURL",
+      "desc": "Exports canvas element to a dataurl image. Note that when multiplier is used, cropping is scaled appropriately"
+    },
+    {
+      "section": "Methods",
+      "name": "toJSON",
+      "hash": "#toJSON",
+      "desc": "Returns Object representation of canvas this alias is provided because if you call JSON.stringify on an instance, the toJSON object will be invoked if it exists. Having a toJSON method means you can do JSON.stringify(myCanvas)"
+    },
+    {
+      "section": "Methods",
+      "name": "toObject",
+      "hash": "#toObject",
+      "desc": "Returns object representation of canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "toString",
+      "hash": "#toString",
+      "desc": "Returns a string representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "toSVG",
+      "hash": "#toSVG",
+      "desc": "Returns SVG representation of canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "viewportCenterObject",
+      "hash": "#viewportCenterObject",
+      "desc": "Centers object vertically and horizontally in the viewport"
+    },
+    {
+      "section": "Methods",
+      "name": "viewportCenterObjectH",
+      "hash": "#viewportCenterObjectH",
+      "desc": "Centers object horizontally in the viewport, object.top is unchanged"
+    },
+    {
+      "section": "Methods",
+      "name": "viewportCenterObjectV",
+      "hash": "#viewportCenterObjectV",
+      "desc": "Centers object Vertically in the viewport, object.top is unchanged"
+    },
+    {
+      "section": "Methods",
+      "name": "zoomToPoint",
+      "hash": "#zoomToPoint",
+      "desc": "Sets zoom level of this canvas instance, the zoom centered around point meaning that following zoom to point with the same point will have the visual effect of the zoom originating from that point. The point won't move. It has nothing to do with canvas center or visual center of the viewport."
+    }
+  ]
+}

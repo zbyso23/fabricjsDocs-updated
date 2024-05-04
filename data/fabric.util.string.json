@@ -1,0 +1,29 @@
+{
+  "file": "fabric.util.string.html",
+  "props": [
+    {
+      "section": "Methods",
+      "name": "camelize",
+      "hash": "#.camelize",
+      "desc": "Camelizes a string"
+    },
+    {
+      "section": "Methods",
+      "name": "capitalize",
+      "hash": "#.capitalize",
+      "desc": "Capitalizes a string"
+    },
+    {
+      "section": "Methods",
+      "name": "escapeXml",
+      "hash": "#.escapeXml",
+      "desc": "Escapes XML in a string"
+    },
+    {
+      "section": "Methods",
+      "name": "graphemeSplit",
+      "hash": "#.graphemeSplit",
+      "desc": "Divide a string in the user perceived single units"
+    }
+  ]
+}

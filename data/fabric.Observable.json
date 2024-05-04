@@ -1,0 +1,23 @@
+{
+  "file": "fabric.Observable.html",
+  "props": [
+    {
+      "section": "Methods",
+      "name": "fire",
+      "hash": "#.fire",
+      "desc": "Fires event with an optional options object"
+    },
+    {
+      "section": "Methods",
+      "name": "off",
+      "hash": "#off",
+      "desc": "Stops event observing for a particular event handler. Calling this method without arguments removes all handlers for all events"
+    },
+    {
+      "section": "Methods",
+      "name": "on",
+      "hash": "#on",
+      "desc": "Observes specified event"
+    }
+  ]
+}

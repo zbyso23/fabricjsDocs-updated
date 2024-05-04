@@ -1,0 +1,89 @@
+{
+  "file": "fabric.SprayBrush.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new SprayBrush",
+      "hash": "#SprayBrush",
+      "desc": "SprayBrush class"
+    },
+    {
+      "section": "Members",
+      "name": "density",
+      "hash": "#density",
+      "desc": "Density of a spray (number of dots per chunk)"
+    },
+    {
+      "section": "Members",
+      "name": "dotWidth",
+      "hash": "#dotWidth",
+      "desc": "Width of spray dots"
+    },
+    {
+      "section": "Members",
+      "name": "dotWidthVariance",
+      "hash": "#dotWidthVariance",
+      "desc": "Width variance of spray dots"
+    },
+    {
+      "section": "Members",
+      "name": "optimizeOverlapping",
+      "hash": "#optimizeOverlapping",
+      "desc": "Whether overlapping dots (rectangles) should be removed (for performance reasons)"
+    },
+    {
+      "section": "Members",
+      "name": "randomOpacity",
+      "hash": "#randomOpacity",
+      "desc": "Whether opacity of a dot should be random"
+    },
+    {
+      "section": "Members",
+      "name": "width",
+      "hash": "#width",
+      "desc": "Width of a spray"
+    },
+    {
+      "section": "Methods",
+      "name": "_render",
+      "hash": "#_render",
+      "desc": "Render all spray chunks"
+    },
+    {
+      "section": "Methods",
+      "name": "addSprayChunk",
+      "hash": "#addSprayChunk",
+      "desc": null
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "onMouseDown",
+      "hash": "#onMouseDown",
+      "desc": "Invoked on mouse down"
+    },
+    {
+      "section": "Methods",
+      "name": "onMouseMove",
+      "hash": "#onMouseMove",
+      "desc": "Invoked on mouse move"
+    },
+    {
+      "section": "Methods",
+      "name": "onMouseUp",
+      "hash": "#onMouseUp",
+      "desc": "Invoked on mouse up"
+    },
+    {
+      "section": "Methods",
+      "name": "render",
+      "hash": "#render",
+      "desc": "Render new chunk of spray brush"
+    }
+  ]
+}

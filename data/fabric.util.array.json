@@ -1,0 +1,23 @@
+{
+  "file": "fabric.util.array.html",
+  "props": [
+    {
+      "section": "Methods",
+      "name": "invoke",
+      "hash": "#.invoke",
+      "desc": "Invokes method on all items in a given array"
+    },
+    {
+      "section": "Methods",
+      "name": "max",
+      "hash": "#.max",
+      "desc": "Finds maximum value in array (not necessarily \"first\" one)"
+    },
+    {
+      "section": "Methods",
+      "name": "min",
+      "hash": "#.min",
+      "desc": "Finds minimum value in array (not necessarily \"first\" one)"
+    }
+  ]
+}

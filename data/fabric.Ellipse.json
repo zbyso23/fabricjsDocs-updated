@@ -1,0 +1,1133 @@
+{
+  "file": "fabric.Ellipse.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new Ellipse",
+      "hash": "#Ellipse",
+      "desc": "Ellipse class"
+    },
+    {
+      "section": "Members",
+      "name": "ATTRIBUTE_NAMES",
+      "hash": "#.ATTRIBUTE_NAMES",
+      "desc": "List of attribute names to account for when parsing SVG element (used by"
+    },
+    {
+      "section": "Members",
+      "name": "__corner",
+      "hash": "#__corner",
+      "desc": "keeps the value of the last hovered corner during mouse move. 0 is no corner, or 'mt', 'ml', 'mtr' etc.. It should be private, but there is no harm in using it as a read-only property."
+    },
+    {
+      "section": "Members",
+      "name": "absolutePositioned",
+      "hash": "#absolutePositioned",
+      "desc": "Meaningful ONLY when the object is used as clipPath. if true, the clipPath will have its top and left relative to canvas, and will not be influenced by the object transform. This will make the clipPath relative to the canvas, but clipping just a particular object. WARNING this is beta, this feature may change or be renamed. since 2.4.0"
+    },
+    {
+      "section": "Members",
+      "name": "aCoords",
+      "hash": "#aCoords",
+      "desc": "Describe object's corner position in canvas object absolute coordinates properties are tl,tr,bl,br and describe the four main corner. each property is an object with x, y, instance of Fabric.Point. The coordinates depends from this properties: width, height, scaleX, scaleY skewX, skewY, angle, strokeWidth, top, left. Those coordinates are useful to understand where an object is. They get updated with oCoords but they do not need to be updated when zoom or panning change. The coordinates get updated with @method setCoords. You can calculate them without updating with @method calcACoords();"
+    },
+    {
+      "section": "Members",
+      "name": "angle",
+      "hash": "#angle",
+      "desc": "Angle of rotation of an object (in degrees)"
+    },
+    {
+      "section": "Members",
+      "name": "backgroundColor",
+      "hash": "#backgroundColor",
+      "desc": "Background color of an object. takes css colors https://www.w3.org/TR/css-color-3/"
+    },
+    {
+      "section": "Members",
+      "name": "borderColor",
+      "hash": "#borderColor",
+      "desc": "Color of controlling borders of an object (when it's active)"
+    },
+    {
+      "section": "Members",
+      "name": "borderDashArray",
+      "hash": "#borderDashArray",
+      "desc": "Array specifying dash pattern of an object's borders (hasBorder must be true)"
+    },
+    {
+      "section": "Members",
+      "name": "borderOpacityWhenMoving",
+      "hash": "#borderOpacityWhenMoving",
+      "desc": "Opacity of object's controlling borders when object is active and moving"
+    },
+    {
+      "section": "Members",
+      "name": "borderScaleFactor",
+      "hash": "#borderScaleFactor",
+      "desc": "Scale factor of object's controlling borders bigger number will make a thicker border border is 1, so this is basically a border thickness since there is no way to change the border itself."
+    },
+    {
+      "section": "Members",
+      "name": "cacheProperties",
+      "hash": "#cacheProperties",
+      "desc": "List of properties to consider when checking if cache needs refresh Those properties are checked by statefullCache ON ( or lazy mode if we want ) or from single calls to Object.set(key, value). If the key is in this list, the object is marked as dirty and refreshed at the next render"
+    },
+    {
+      "section": "Members",
+      "name": "centeredRotation",
+      "hash": "#centeredRotation",
+      "desc": "When true, this object will use center point as the origin of transformation when being rotated via the controls."
+    },
+    {
+      "section": "Members",
+      "name": "centeredScaling",
+      "hash": "#centeredScaling",
+      "desc": "When true, this object will use center point as the origin of transformation when being scaled via the controls."
+    },
+    {
+      "section": "Members",
+      "name": "clipPath",
+      "hash": "#clipPath",
+      "desc": "a fabricObject that, without stroke define a clipping area with their shape. filled in black the clipPath object gets used when the object has rendered, and the context is placed in the center of the object cacheCanvas. If you want 0,0 of a clipPath to align with an object center, use clipPath.originX/Y to 'center'"
+    },
+    {
+      "section": "Members",
+      "name": "colorProperties",
+      "hash": "#colorProperties",
+      "desc": "List of properties to consider for animating colors."
+    },
+    {
+      "section": "Members",
+      "name": "controls",
+      "hash": "#controls",
+      "desc": "custom controls interface controls are added by default_controls.js"
+    },
+    {
+      "section": "Members",
+      "name": "cornerColor",
+      "hash": "#cornerColor",
+      "desc": "Color of controlling corners of an object (when it's active)"
+    },
+    {
+      "section": "Members",
+      "name": "cornerDashArray",
+      "hash": "#cornerDashArray",
+      "desc": "Array specifying dash pattern of an object's control (hasBorder must be true)"
+    },
+    {
+      "section": "Members",
+      "name": "cornerSize",
+      "hash": "#cornerSize",
+      "desc": "Size of object's controlling corners (in pixels)"
+    },
+    {
+      "section": "Members",
+      "name": "cornerStrokeColor",
+      "hash": "#cornerStrokeColor",
+      "desc": "Color of controlling corners of an object (when it's active and transparentCorners false)"
+    },
+    {
+      "section": "Members",
+      "name": "cornerStyle",
+      "hash": "#cornerStyle",
+      "desc": "Specify style of control, 'rect' or 'circle'"
+    },
+    {
+      "section": "Members",
+      "name": "dirty",
+      "hash": "#dirty",
+      "desc": "When set to `true`, object's cache will be rerendered next render call. since 1.7.0"
+    },
+    {
+      "section": "Members",
+      "name": "evented",
+      "hash": "#evented",
+      "desc": "When set to `false`, an object can not be a target of events. All events propagate through it. Introduced in v1.3.4"
+    },
+    {
+      "section": "Members",
+      "name": "excludeFromExport",
+      "hash": "#excludeFromExport",
+      "desc": "When `true`, object is not exported in OBJECT/JSON"
+    },
+    {
+      "section": "Members",
+      "name": "fill",
+      "hash": "#fill",
+      "desc": "Color of object's fill takes css colors https://www.w3.org/TR/css-color-3/"
+    },
+    {
+      "section": "Members",
+      "name": "fillRule",
+      "hash": "#fillRule",
+      "desc": "Fill rule used to fill an object accepted values are nonzero, evenodd"
+    },
+    {
+      "section": "Members",
+      "name": "flipX",
+      "hash": "#flipX",
+      "desc": "When true, an object is rendered as flipped horizontally"
+    },
+    {
+      "section": "Members",
+      "name": "flipY",
+      "hash": "#flipY",
+      "desc": "When true, an object is rendered as flipped vertically"
+    },
+    {
+      "section": "Members",
+      "name": "globalCompositeOperation",
+      "hash": "#globalCompositeOperation",
+      "desc": "Composite rule used for canvas globalCompositeOperation"
+    },
+    {
+      "section": "Members",
+      "name": "hasBorders",
+      "hash": "#hasBorders",
+      "desc": "When set to `false`, object's controlling borders are not rendered"
+    },
+    {
+      "section": "Members",
+      "name": "hasControls",
+      "hash": "#hasControls",
+      "desc": "When set to `false`, object's controls are not displayed and can not be used to manipulate object"
+    },
+    {
+      "section": "Members",
+      "name": "height",
+      "hash": "#height",
+      "desc": "Object height"
+    },
+    {
+      "section": "Members",
+      "name": "hoverCursor",
+      "hash": "#hoverCursor",
+      "desc": "Default cursor value used when hovering over this object on canvas"
+    },
+    {
+      "section": "Members",
+      "name": "includeDefaultValues",
+      "hash": "#includeDefaultValues",
+      "desc": "When `false`, default object's values are not included in its serialization"
+    },
+    {
+      "section": "Members",
+      "name": "inverted",
+      "hash": "#inverted",
+      "desc": "Meaningful ONLY when the object is used as clipPath. if true, the clipPath will make the object clip to the outside of the clipPath since 2.4.0"
+    },
+    {
+      "section": "Members",
+      "name": "left",
+      "hash": "#left",
+      "desc": "Left position of an object. Note that by default it's relative to object left. You can change this by setting originX={left/center/right}"
+    },
+    {
+      "section": "Members",
+      "name": "lineCoords",
+      "hash": "#lineCoords",
+      "desc": "Describe object's corner position in canvas element coordinates. includes padding. Used of object detection. set and refreshed with setCoords."
+    },
+    {
+      "section": "Members",
+      "name": "lockMovementX",
+      "hash": "#lockMovementX",
+      "desc": "When `true`, object horizontal movement is locked"
+    },
+    {
+      "section": "Members",
+      "name": "lockMovementY",
+      "hash": "#lockMovementY",
+      "desc": "When `true`, object vertical movement is locked"
+    },
+    {
+      "section": "Members",
+      "name": "lockRotation",
+      "hash": "#lockRotation",
+      "desc": "When `true`, object rotation is locked"
+    },
+    {
+      "section": "Members",
+      "name": "lockScalingFlip",
+      "hash": "#lockScalingFlip",
+      "desc": "When `true`, object cannot be flipped by scaling into negative values"
+    },
+    {
+      "section": "Members",
+      "name": "lockScalingX",
+      "hash": "#lockScalingX",
+      "desc": "When `true`, object horizontal scaling is locked"
+    },
+    {
+      "section": "Members",
+      "name": "lockScalingY",
+      "hash": "#lockScalingY",
+      "desc": "When `true`, object vertical scaling is locked"
+    },
+    {
+      "section": "Members",
+      "name": "lockSkewingX",
+      "hash": "#lockSkewingX",
+      "desc": "When `true`, object horizontal skewing is locked"
+    },
+    {
+      "section": "Members",
+      "name": "lockSkewingY",
+      "hash": "#lockSkewingY",
+      "desc": "When `true`, object vertical skewing is locked"
+    },
+    {
+      "section": "Members",
+      "name": "matrixCache",
+      "hash": "#matrixCache",
+      "desc": "storage for object full transform matrix"
+    },
+    {
+      "section": "Members",
+      "name": "minScaleLimit",
+      "hash": "#minScaleLimit",
+      "desc": "Minimum allowed scale value of an object"
+    },
+    {
+      "section": "Members",
+      "name": "moveCursor",
+      "hash": "#moveCursor",
+      "desc": "Default cursor value used when moving this object on canvas"
+    },
+    {
+      "section": "Members",
+      "name": "noScaleCache",
+      "hash": "#noScaleCache",
+      "desc": "When `true`, cache does not get updated during scaling. The picture will get blocky if scaled too much and will be redrawn with correct details at the end of scaling. this setting is performance and application dependant. default to true since 1.7.0"
+    },
+    {
+      "section": "Members",
+      "name": "objectCaching",
+      "hash": "#objectCaching",
+      "desc": "When `true`, object is cached on an additional canvas. When `false`, object is not cached unless necessary ( clipPath ) default to true"
+    },
+    {
+      "section": "Members",
+      "name": "oCoords",
+      "hash": "#oCoords",
+      "desc": "Describe object's corner position in canvas element coordinates. properties are depending on control keys and padding the main controls. each property is an object with x, y and corner. The `corner` property contains in a similar manner the 4 points of the interactive area of the corner. The coordinates depends from the controls positionHandler and are used to draw and locate controls"
+    },
+    {
+      "section": "Members",
+      "name": "opacity",
+      "hash": "#opacity",
+      "desc": "Opacity of an object"
+    },
+    {
+      "section": "Members",
+      "name": "originX",
+      "hash": "#originX",
+      "desc": "Horizontal origin of transformation of an object (one of \"left\", \"right\", \"center\") See http://jsfiddle.net/1ow02gea/244/ on how originX/originY affect objects in groups"
+    },
+    {
+      "section": "Members",
+      "name": "originY",
+      "hash": "#originY",
+      "desc": "Vertical origin of transformation of an object (one of \"top\", \"bottom\", \"center\") See http://jsfiddle.net/1ow02gea/244/ on how originX/originY affect objects in groups"
+    },
+    {
+      "section": "Members",
+      "name": "ownMatrixCache",
+      "hash": "#ownMatrixCache",
+      "desc": "storage for object transform matrix"
+    },
+    {
+      "section": "Members",
+      "name": "padding",
+      "hash": "#padding",
+      "desc": "Padding between object and its controlling borders (in pixels)"
+    },
+    {
+      "section": "Members",
+      "name": "paintFirst",
+      "hash": "#paintFirst",
+      "desc": "Determines if the fill or the stroke is drawn first (one of \"fill\" or \"stroke\")"
+    },
+    {
+      "section": "Members",
+      "name": "perPixelTargetFind",
+      "hash": "#perPixelTargetFind",
+      "desc": "When set to `true`, objects are \"found\" on canvas on per-pixel basis rather than according to bounding box"
+    },
+    {
+      "section": "Members",
+      "name": "rx",
+      "hash": "#rx",
+      "desc": "Horizontal radius"
+    },
+    {
+      "section": "Members",
+      "name": "ry",
+      "hash": "#ry",
+      "desc": "Vertical radius"
+    },
+    {
+      "section": "Members",
+      "name": "scaleX",
+      "hash": "#scaleX",
+      "desc": "Object scale factor (horizontal)"
+    },
+    {
+      "section": "Members",
+      "name": "scaleY",
+      "hash": "#scaleY",
+      "desc": "Object scale factor (vertical)"
+    },
+    {
+      "section": "Members",
+      "name": "selectable",
+      "hash": "#selectable",
+      "desc": "When set to `false`, an object can not be selected for modification (using either point-click-based or group-based selection). But events still fire on it."
+    },
+    {
+      "section": "Members",
+      "name": "selectionBackgroundColor",
+      "hash": "#selectionBackgroundColor",
+      "desc": "Selection Background color of an object. colored layer behind the object when it is active. does not mix good with globalCompositeOperation methods."
+    },
+    {
+      "section": "Members",
+      "name": "shadow",
+      "hash": "#shadow",
+      "desc": "Shadow object representing shadow of this shape"
+    },
+    {
+      "section": "Members",
+      "name": "skewX",
+      "hash": "#skewX",
+      "desc": "Angle of skew on x axes of an object (in degrees)"
+    },
+    {
+      "section": "Members",
+      "name": "skewY",
+      "hash": "#skewY",
+      "desc": "Angle of skew on y axes of an object (in degrees)"
+    },
+    {
+      "section": "Members",
+      "name": "statefullCache",
+      "hash": "#statefullCache",
+      "desc": "When `true`, object properties are checked for cache invalidation. In some particular situation you may want this to be disabled ( spray brush, very big, groups) or if your application does not allow you to modify properties for groups child you want to disable it for groups. default to false since 1.7.0"
+    },
+    {
+      "section": "Members",
+      "name": "stateProperties",
+      "hash": "#stateProperties",
+      "desc": "List of properties to consider when checking if state of an object is changed (fabric.Object#hasStateChanged) as well as for history (undo/redo) purposes"
+    },
+    {
+      "section": "Members",
+      "name": "stroke",
+      "hash": "#stroke",
+      "desc": "When defined, an object is rendered via stroke and this property specifies its color takes css colors https://www.w3.org/TR/css-color-3/"
+    },
+    {
+      "section": "Members",
+      "name": "strokeDashArray",
+      "hash": "#strokeDashArray",
+      "desc": "Array specifying dash pattern of an object's stroke (stroke must be defined)"
+    },
+    {
+      "section": "Members",
+      "name": "strokeDashOffset",
+      "hash": "#strokeDashOffset",
+      "desc": "Line offset of an object's stroke"
+    },
+    {
+      "section": "Members",
+      "name": "strokeLineCap",
+      "hash": "#strokeLineCap",
+      "desc": "Line endings style of an object's stroke (one of \"butt\", \"round\", \"square\")"
+    },
+    {
+      "section": "Members",
+      "name": "strokeLineJoin",
+      "hash": "#strokeLineJoin",
+      "desc": "Corner style of an object's stroke (one of \"bevel\", \"round\", \"miter\")"
+    },
+    {
+      "section": "Members",
+      "name": "strokeMiterLimit",
+      "hash": "#strokeMiterLimit",
+      "desc": "Maximum miter length (used for strokeLineJoin = \"miter\") of an object's stroke"
+    },
+    {
+      "section": "Members",
+      "name": "strokeUniform",
+      "hash": "#strokeUniform",
+      "desc": "When `false`, the stoke width will scale with the object. When `true`, the stroke will always match the exact pixel size entered for stroke width. this Property does not work on Text classes or drawing call that uses strokeText,fillText methods default to false"
+    },
+    {
+      "section": "Members",
+      "name": "strokeWidth",
+      "hash": "#strokeWidth",
+      "desc": "Width of a stroke used to render this object"
+    },
+    {
+      "section": "Members",
+      "name": "top",
+      "hash": "#top",
+      "desc": "Top position of an object. Note that by default it's relative to object top. You can change this by setting originY={top/center/bottom}"
+    },
+    {
+      "section": "Members",
+      "name": "touchCornerSize",
+      "hash": "#touchCornerSize",
+      "desc": "Size of object's controlling corners when touch interaction is detected"
+    },
+    {
+      "section": "Members",
+      "name": "transparentCorners",
+      "hash": "#transparentCorners",
+      "desc": "When true, object's controlling corners are rendered as transparent inside (i.e. stroke instead of fill)"
+    },
+    {
+      "section": "Members",
+      "name": "type",
+      "hash": "#type",
+      "desc": "Type of an object"
+    },
+    {
+      "section": "Members",
+      "name": "visible",
+      "hash": "#visible",
+      "desc": "When set to `false`, an object is not rendered on canvas"
+    },
+    {
+      "section": "Members",
+      "name": "width",
+      "hash": "#width",
+      "desc": "Object width"
+    },
+    {
+      "section": "Methods",
+      "name": "fromElement",
+      "hash": "#.fromElement",
+      "desc": "Returns"
+    },
+    {
+      "section": "Methods",
+      "name": "fromObject",
+      "hash": "#.fromObject",
+      "desc": "Returns"
+    },
+    {
+      "section": "Methods",
+      "name": "_calcRotateMatrix",
+      "hash": "#_calcRotateMatrix",
+      "desc": "calculate rotation matrix of an object"
+    },
+    {
+      "section": "Methods",
+      "name": "_calcTranslateMatrix",
+      "hash": "#_calcTranslateMatrix",
+      "desc": "calculate the translation matrix for an object transform"
+    },
+    {
+      "section": "Methods",
+      "name": "_drawClipPath",
+      "hash": "#_drawClipPath",
+      "desc": "Prepare clipPath state and cache and draw it on instance's cache"
+    },
+    {
+      "section": "Methods",
+      "name": "_getCoords",
+      "hash": "#_getCoords",
+      "desc": "return correct set of coordinates for intersection this will return either aCoords or lineCoords."
+    },
+    {
+      "section": "Methods",
+      "name": "_limitCacheSize",
+      "hash": "#_limitCacheSize",
+      "desc": "Limit the cache dimensions so that X * Y do not cross fabric.perfLimitSizeTotal and each side do not cross fabric.cacheSideLimit those numbers are configurable so that you can get as much detail as you want making bargain with performances."
+    },
+    {
+      "section": "Methods",
+      "name": "_removeCacheCanvas",
+      "hash": "#_removeCacheCanvas",
+      "desc": "Remove cacheCanvas and its dimensions from the objects"
+    },
+    {
+      "section": "Methods",
+      "name": "_renderControls",
+      "hash": "#_renderControls",
+      "desc": "Renders controls and borders for the object the context here is not transformed"
+    },
+    {
+      "section": "Methods",
+      "name": "_setupCompositeOperation",
+      "hash": "#_setupCompositeOperation",
+      "desc": "Sets canvas globalCompositeOperation for specific object custom composition operation for the particular object can be specified using globalCompositeOperation property"
+    },
+    {
+      "section": "Methods",
+      "name": "_toSVG",
+      "hash": "#_toSVG",
+      "desc": "Returns svg representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "adjustPosition",
+      "hash": "#adjustPosition",
+      "desc": null
+    },
+    {
+      "section": "Methods",
+      "name": "animate",
+      "hash": "#animate",
+      "desc": "Animates object's properties"
+    },
+    {
+      "section": "Methods",
+      "name": "bringForward",
+      "hash": "#bringForward",
+      "desc": "Moves an object up in stack of drawn objects"
+    },
+    {
+      "section": "Methods",
+      "name": "bringToFront",
+      "hash": "#bringToFront",
+      "desc": "Moves an object to the top of the stack of drawn objects"
+    },
+    {
+      "section": "Methods",
+      "name": "calcOwnMatrix",
+      "hash": "#calcOwnMatrix",
+      "desc": "calculate transform matrix that represents the current transformations from the object's properties, this matrix does not include the group transformation"
+    },
+    {
+      "section": "Methods",
+      "name": "calcTransformMatrix",
+      "hash": "#calcTransformMatrix",
+      "desc": "calculate transform matrix that represents the current transformations from the object's properties."
+    },
+    {
+      "section": "Methods",
+      "name": "center",
+      "hash": "#center",
+      "desc": "Centers object vertically and horizontally on canvas to which is was added last You might need to call `setCoords` on an object after centering, to update controls area."
+    },
+    {
+      "section": "Methods",
+      "name": "centerH",
+      "hash": "#centerH",
+      "desc": "Centers object horizontally on canvas to which it was added last. You might need to call `setCoords` on an object after centering, to update controls area."
+    },
+    {
+      "section": "Methods",
+      "name": "centerV",
+      "hash": "#centerV",
+      "desc": "Centers object vertically on canvas to which it was added last. You might need to call `setCoords` on an object after centering, to update controls area."
+    },
+    {
+      "section": "Methods",
+      "name": "clone",
+      "hash": "#clone",
+      "desc": "Clones an instance, using a callback method will work for every object."
+    },
+    {
+      "section": "Methods",
+      "name": "cloneAsImage",
+      "hash": "#cloneAsImage",
+      "desc": "Creates an instance of fabric.Image out of an object makes use of toCanvasElement. Once this method was based on toDataUrl and loadImage, so it also had a quality and format option. toCanvasElement is faster and produce no loss of quality. If you need to get a real Jpeg or Png from an object, using toDataURL is the right way to do it. toCanvasElement and then toBlob from the obtained canvas is also a good option. This method is sync now, but still support the callback because we did not want to break. When fabricJS 5.0 will be planned, this will probably be changed to not have a callback."
+    },
+    {
+      "section": "Methods",
+      "name": "complexity",
+      "hash": "#complexity",
+      "desc": "Returns complexity of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "containsPoint",
+      "hash": "#containsPoint",
+      "desc": "Checks if point is inside the object"
+    },
+    {
+      "section": "Methods",
+      "name": "dispose",
+      "hash": "#dispose",
+      "desc": "cancel instance's running animations"
+    },
+    {
+      "section": "Methods",
+      "name": "drawBorders",
+      "hash": "#drawBorders",
+      "desc": "Draws borders of an object's bounding box. Requires public properties: width, height Requires public options: padding, borderColor"
+    },
+    {
+      "section": "Methods",
+      "name": "drawBordersInGroup",
+      "hash": "#drawBordersInGroup",
+      "desc": "Draws borders of an object's bounding box when it is inside a group. Requires public properties: width, height Requires public options: padding, borderColor"
+    },
+    {
+      "section": "Methods",
+      "name": "drawCacheOnCanvas",
+      "hash": "#drawCacheOnCanvas",
+      "desc": "Paint the cached copy of the object on the target context."
+    },
+    {
+      "section": "Methods",
+      "name": "drawClipPathOnCache",
+      "hash": "#drawClipPathOnCache",
+      "desc": "Execute the drawing operation for an object clipPath"
+    },
+    {
+      "section": "Methods",
+      "name": "drawControls",
+      "hash": "#drawControls",
+      "desc": "Draws corners of an object's bounding box. Requires public properties: width, height Requires public options: cornerSize, padding"
+    },
+    {
+      "section": "Methods",
+      "name": "drawObject",
+      "hash": "#drawObject",
+      "desc": "Execute the drawing operation for an object on a specified context"
+    },
+    {
+      "section": "Methods",
+      "name": "drawSelectionBackground",
+      "hash": "#drawSelectionBackground",
+      "desc": "Draws a colored layer behind the object, inside its selection borders. Requires public options: padding, selectionBackgroundColor this function is called when the context is transformed has checks to be skipped when the object is on a staticCanvas"
+    },
+    {
+      "section": "Methods",
+      "name": "forEachControl",
+      "hash": "#forEachControl",
+      "desc": "Calls a function for each control. The function gets called, with the control, the object that is calling the iterator and the control's key"
+    },
+    {
+      "section": "Methods",
+      "name": "fxStraighten",
+      "hash": "#fxStraighten",
+      "desc": "Same as fabric.Object.prototype.straighten but with animation"
+    },
+    {
+      "section": "Methods",
+      "name": "getBoundingRect",
+      "hash": "#getBoundingRect",
+      "desc": "Returns coordinates of object's bounding rectangle (left, top, width, height) the box is intended as aligned to axis of canvas."
+    },
+    {
+      "section": "Methods",
+      "name": "getCenterPoint",
+      "hash": "#getCenterPoint",
+      "desc": "Returns the real center coordinates of the object"
+    },
+    {
+      "section": "Methods",
+      "name": "getCoords",
+      "hash": "#getCoords",
+      "desc": "return correct set of coordinates for intersection this will return either aCoords or lineCoords. The coords are returned in an array."
+    },
+    {
+      "section": "Methods",
+      "name": "getLocalPointer",
+      "hash": "#getLocalPointer",
+      "desc": "Returns coordinates of a pointer relative to an object"
+    },
+    {
+      "section": "Methods",
+      "name": "getObjectOpacity",
+      "hash": "#getObjectOpacity",
+      "desc": "Return the object opacity counting also the group property"
+    },
+    {
+      "section": "Methods",
+      "name": "getObjectScaling",
+      "hash": "#getObjectScaling",
+      "desc": "Return the object scale factor counting also the group scaling"
+    },
+    {
+      "section": "Methods",
+      "name": "getPointByOrigin",
+      "hash": "#getPointByOrigin",
+      "desc": "Returns the coordinates of the object as if it has a different origin"
+    },
+    {
+      "section": "Methods",
+      "name": "getRx",
+      "hash": "#getRx",
+      "desc": "Returns horizontal radius of an object (according to how an object is scaled)"
+    },
+    {
+      "section": "Methods",
+      "name": "getRy",
+      "hash": "#getRy",
+      "desc": "Returns Vertical radius of an object (according to how an object is scaled)"
+    },
+    {
+      "section": "Methods",
+      "name": "getScaledHeight",
+      "hash": "#getScaledHeight",
+      "desc": "Returns height of an object bounding box counting transformations before 2.0 it was named getHeight();"
+    },
+    {
+      "section": "Methods",
+      "name": "getScaledWidth",
+      "hash": "#getScaledWidth",
+      "desc": "Returns width of an object's bounding box counting transformations before 2.0 it was named getWidth();"
+    },
+    {
+      "section": "Methods",
+      "name": "getSvgCommons",
+      "hash": "#getSvgCommons",
+      "desc": "Returns id attribute for svg output"
+    },
+    {
+      "section": "Methods",
+      "name": "getSvgFilter",
+      "hash": "#getSvgFilter",
+      "desc": "Returns filter for svg shadow"
+    },
+    {
+      "section": "Methods",
+      "name": "getSvgSpanStyles",
+      "hash": "#getSvgSpanStyles",
+      "desc": "Returns styles-string for svg-export"
+    },
+    {
+      "section": "Methods",
+      "name": "getSvgStyles",
+      "hash": "#getSvgStyles",
+      "desc": "Returns styles-string for svg-export"
+    },
+    {
+      "section": "Methods",
+      "name": "getSvgTextDecoration",
+      "hash": "#getSvgTextDecoration",
+      "desc": "Returns text-decoration property for svg-export"
+    },
+    {
+      "section": "Methods",
+      "name": "getSvgTransform",
+      "hash": "#getSvgTransform",
+      "desc": "Returns transform-string for svg-export"
+    },
+    {
+      "section": "Methods",
+      "name": "getTotalObjectScaling",
+      "hash": "#getTotalObjectScaling",
+      "desc": "Return the object scale factor counting also the group scaling, zoom and retina"
+    },
+    {
+      "section": "Methods",
+      "name": "getViewportTransform",
+      "hash": "#getViewportTransform",
+      "desc": "Retrieves viewportTransform from Object's canvas if possible"
+    },
+    {
+      "section": "Methods",
+      "name": "hasFill",
+      "hash": "#hasFill",
+      "desc": "return true if the object will draw a fill Does not consider text styles. This is just a shortcut used at rendering time We want it to be an approximation and be fast. wrote to avoid extra caching, it has to return true when fill happens, can guess when it will not happen at 100% chance, does not matter if it misses some use case where the fill is invisible."
+    },
+    {
+      "section": "Methods",
+      "name": "hasStateChanged",
+      "hash": "#hasStateChanged",
+      "desc": "Returns true if object state (one of its state properties) was changed"
+    },
+    {
+      "section": "Methods",
+      "name": "hasStroke",
+      "hash": "#hasStroke",
+      "desc": "return true if the object will draw a stroke Does not consider text styles. This is just a shortcut used at rendering time We want it to be an approximation and be fast. wrote to avoid extra caching, it has to return true when stroke happens, can guess when it will not happen at 100% chance, does not matter if it misses some use case where the stroke is invisible."
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "intersectsWithObject",
+      "hash": "#intersectsWithObject",
+      "desc": "Checks if object intersects with another object"
+    },
+    {
+      "section": "Methods",
+      "name": "intersectsWithRect",
+      "hash": "#intersectsWithRect",
+      "desc": "Checks if object intersects with an area formed by 2 points"
+    },
+    {
+      "section": "Methods",
+      "name": "isCacheDirty",
+      "hash": "#isCacheDirty",
+      "desc": "Check if cache is dirty"
+    },
+    {
+      "section": "Methods",
+      "name": "isContainedWithinObject",
+      "hash": "#isContainedWithinObject",
+      "desc": "Checks if object is fully contained within area of another object"
+    },
+    {
+      "section": "Methods",
+      "name": "isContainedWithinRect",
+      "hash": "#isContainedWithinRect",
+      "desc": "Checks if object is fully contained within area formed by 2 points"
+    },
+    {
+      "section": "Methods",
+      "name": "isControlVisible",
+      "hash": "#isControlVisible",
+      "desc": "Returns true if the specified control is visible, false otherwise."
+    },
+    {
+      "section": "Methods",
+      "name": "isOnScreen",
+      "hash": "#isOnScreen",
+      "desc": "Checks if object is contained within the canvas with current viewportTransform the check is done stopping at first point that appears on screen"
+    },
+    {
+      "section": "Methods",
+      "name": "isPartiallyOnScreen",
+      "hash": "#isPartiallyOnScreen",
+      "desc": "Checks if object is partially contained within the canvas with current viewportTransform"
+    },
+    {
+      "section": "Methods",
+      "name": "isType",
+      "hash": "#isType",
+      "desc": "Returns true if specified type is identical to the type of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "moveTo",
+      "hash": "#moveTo",
+      "desc": "Moves an object to specified level in stack of drawn objects"
+    },
+    {
+      "section": "Methods",
+      "name": "needsItsOwnCache",
+      "hash": "#needsItsOwnCache",
+      "desc": "When set to `true`, force the object to have its own cache, even if it is inside a group it may be needed when your object behave in a particular way on the cache and always needs its own isolated canvas to render correctly. Created to be overridden since 1.7.12"
+    },
+    {
+      "section": "Methods",
+      "name": "onDeselect",
+      "hash": "#onDeselect",
+      "desc": "This callback function is called every time _discardActiveObject or _setActiveObject try to to deselect this object. If the function returns true, the process is cancelled"
+    },
+    {
+      "section": "Methods",
+      "name": "onSelect",
+      "hash": "#onSelect",
+      "desc": "This callback function is called every time _discardActiveObject or _setActiveObject try to to select this object. If the function returns true, the process is cancelled"
+    },
+    {
+      "section": "Methods",
+      "name": "render",
+      "hash": "#render",
+      "desc": "Renders an object on a specified context"
+    },
+    {
+      "section": "Methods",
+      "name": "rotate",
+      "hash": "#rotate",
+      "desc": "Sets \"angle\" of an instance with centered rotation"
+    },
+    {
+      "section": "Methods",
+      "name": "saveState",
+      "hash": "#saveState",
+      "desc": "Saves state of an object"
+    },
+    {
+      "section": "Methods",
+      "name": "scale",
+      "hash": "#scale",
+      "desc": "Scales an object (equally by x and y)"
+    },
+    {
+      "section": "Methods",
+      "name": "scaleToHeight",
+      "hash": "#scaleToHeight",
+      "desc": "Scales an object to a given height, with respect to bounding box (scaling by x/y equally)"
+    },
+    {
+      "section": "Methods",
+      "name": "scaleToWidth",
+      "hash": "#scaleToWidth",
+      "desc": "Scales an object to a given width, with respect to bounding box (scaling by x/y equally)"
+    },
+    {
+      "section": "Methods",
+      "name": "sendBackwards",
+      "hash": "#sendBackwards",
+      "desc": "Moves an object down in stack of drawn objects"
+    },
+    {
+      "section": "Methods",
+      "name": "sendToBack",
+      "hash": "#sendToBack",
+      "desc": "Moves an object to the bottom of the stack of drawn objects"
+    },
+    {
+      "section": "Methods",
+      "name": "setControlsVisibility",
+      "hash": "#setControlsVisibility",
+      "desc": "Sets the visibility state of object controls."
+    },
+    {
+      "section": "Methods",
+      "name": "setControlVisible",
+      "hash": "#setControlVisible",
+      "desc": "Sets the visibility of the specified control."
+    },
+    {
+      "section": "Methods",
+      "name": "setCoords",
+      "hash": "#setCoords",
+      "desc": "Sets corner and controls position coordinates based on current angle, width and height, left and top. oCoords are used to find the corners aCoords are used to quickly find an object on the canvas lineCoords are used to quickly find object during pointer events. See"
+    },
+    {
+      "section": "Methods",
+      "name": "setOnGroup",
+      "hash": "#setOnGroup",
+      "desc": "This callback function is called by the parent group of an object every time a non-delegated property changes on the group. It is passed the key and value as parameters. Not adding in this function's signature to avoid Travis build error about unused variables."
+    },
+    {
+      "section": "Methods",
+      "name": "setOptions",
+      "hash": "#setOptions",
+      "desc": "Sets object's properties from options"
+    },
+    {
+      "section": "Methods",
+      "name": "setPositionByOrigin",
+      "hash": "#setPositionByOrigin",
+      "desc": "Sets the position of the object taking into consideration the object's origin"
+    },
+    {
+      "section": "Methods",
+      "name": "setupState",
+      "hash": "#setupState",
+      "desc": "Setups state of an object"
+    },
+    {
+      "section": "Methods",
+      "name": "shouldCache",
+      "hash": "#shouldCache",
+      "desc": "Decide if the object should cache or not. Create its own cache level objectCaching is a global flag, wins over everything needsItsOwnCache should be used when the object drawing method requires a cache step. None of the fabric classes requires it. Generally you do not cache objects in groups because the group outside is cached. Read as: cache if is needed, or if the feature is enabled but we are not already caching."
+    },
+    {
+      "section": "Methods",
+      "name": "straighten",
+      "hash": "#straighten",
+      "desc": "Straightens an object (rotating it from current angle to one of 0, 90, 180, 270, etc. depending on which is closer)"
+    },
+    {
+      "section": "Methods",
+      "name": "toCanvasElement",
+      "hash": "#toCanvasElement",
+      "desc": "Converts an object into a HTMLCanvas element"
+    },
+    {
+      "section": "Methods",
+      "name": "toClipPathSVG",
+      "hash": "#toClipPathSVG",
+      "desc": "Returns svg clipPath representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "toDatalessObject",
+      "hash": "#toDatalessObject",
+      "desc": "Returns (dataless) object representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "toDataURL",
+      "hash": "#toDataURL",
+      "desc": "Converts an object into a data-url-like string"
+    },
+    {
+      "section": "Methods",
+      "name": "toJSON",
+      "hash": "#toJSON",
+      "desc": "Returns a JSON representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "toLocalPoint",
+      "hash": "#toLocalPoint",
+      "desc": "Returns the point in local coordinates"
+    },
+    {
+      "section": "Methods",
+      "name": "toObject",
+      "hash": "#toObject",
+      "desc": "Returns object representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "toString",
+      "hash": "#toString",
+      "desc": "Returns a string representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "toSVG",
+      "hash": "#toSVG",
+      "desc": "Returns svg representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "transform",
+      "hash": "#transform",
+      "desc": "Transforms context when rendering an object"
+    },
+    {
+      "section": "Methods",
+      "name": "translateToCenterPoint",
+      "hash": "#translateToCenterPoint",
+      "desc": "Translates the coordinates from origin to center coordinates (based on the object's dimensions)"
+    },
+    {
+      "section": "Methods",
+      "name": "translateToGivenOrigin",
+      "hash": "#translateToGivenOrigin",
+      "desc": "Translates the coordinates from a set of origin to another (based on the object's dimensions)"
+    },
+    {
+      "section": "Methods",
+      "name": "translateToOriginPoint",
+      "hash": "#translateToOriginPoint",
+      "desc": "Translates the coordinates from center to origin coordinates (based on the object's dimensions)"
+    },
+    {
+      "section": "Methods",
+      "name": "viewportCenter",
+      "hash": "#viewportCenter",
+      "desc": "Centers object on current viewport of canvas to which it was added last. You might need to call `setCoords` on an object after centering, to update controls area."
+    },
+    {
+      "section": "Methods",
+      "name": "viewportCenterH",
+      "hash": "#viewportCenterH",
+      "desc": "Centers object horizontally on current viewport of canvas to which it was added last. You might need to call `setCoords` on an object after centering, to update controls area."
+    },
+    {
+      "section": "Methods",
+      "name": "viewportCenterV",
+      "hash": "#viewportCenterV",
+      "desc": "Centers object vertically on current viewport of canvas to which it was added last. You might need to call `setCoords` on an object after centering, to update controls area."
+    },
+    {
+      "section": "Methods",
+      "name": "willDrawShadow",
+      "hash": "#willDrawShadow",
+      "desc": "Check if this object or a child object will cast a shadow used by Group.shouldCache to know if child has a shadow recursively"
+    }
+  ]
+}

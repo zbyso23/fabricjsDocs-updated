@@ -1,0 +1,185 @@
+{
+  "file": "fabric.Point.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new Point",
+      "hash": "#Point",
+      "desc": "Point class"
+    },
+    {
+      "section": "Methods",
+      "name": "add",
+      "hash": "#add",
+      "desc": "Adds another point to this one and returns another one"
+    },
+    {
+      "section": "Methods",
+      "name": "addEquals",
+      "hash": "#addEquals",
+      "desc": "Adds another point to this one"
+    },
+    {
+      "section": "Methods",
+      "name": "clone",
+      "hash": "#clone",
+      "desc": "return a cloned instance of the point"
+    },
+    {
+      "section": "Methods",
+      "name": "distanceFrom",
+      "hash": "#distanceFrom",
+      "desc": "Returns distance from this point and another one"
+    },
+    {
+      "section": "Methods",
+      "name": "divide",
+      "hash": "#divide",
+      "desc": "Divides this point by a value and returns a new one TODO: rename in scalarDivide in 2.0"
+    },
+    {
+      "section": "Methods",
+      "name": "divideEquals",
+      "hash": "#divideEquals",
+      "desc": "Divides this point by a value TODO: rename in scalarDivideEquals in 2.0"
+    },
+    {
+      "section": "Methods",
+      "name": "eq",
+      "hash": "#eq",
+      "desc": "Returns true if this point is equal to another one"
+    },
+    {
+      "section": "Methods",
+      "name": "gt",
+      "hash": "#gt",
+      "desc": "Returns true if this point is greater another one"
+    },
+    {
+      "section": "Methods",
+      "name": "gte",
+      "hash": "#gte",
+      "desc": "Returns true if this point is greater than or equal to another one"
+    },
+    {
+      "section": "Methods",
+      "name": "lerp",
+      "hash": "#lerp",
+      "desc": "Returns new point which is the result of linear interpolation with this one and another one"
+    },
+    {
+      "section": "Methods",
+      "name": "lt",
+      "hash": "#lt",
+      "desc": "Returns true if this point is less than another one"
+    },
+    {
+      "section": "Methods",
+      "name": "lte",
+      "hash": "#lte",
+      "desc": "Returns true if this point is less than or equal to another one"
+    },
+    {
+      "section": "Methods",
+      "name": "max",
+      "hash": "#max",
+      "desc": "Returns a new point which is the max of this and another one"
+    },
+    {
+      "section": "Methods",
+      "name": "midPointFrom",
+      "hash": "#midPointFrom",
+      "desc": "Returns the point between this point and another one"
+    },
+    {
+      "section": "Methods",
+      "name": "min",
+      "hash": "#min",
+      "desc": "Returns a new point which is the min of this and another one"
+    },
+    {
+      "section": "Methods",
+      "name": "multiply",
+      "hash": "#multiply",
+      "desc": "Multiplies this point by a value and returns a new one TODO: rename in scalarMultiply in 2.0"
+    },
+    {
+      "section": "Methods",
+      "name": "multiplyEquals",
+      "hash": "#multiplyEquals",
+      "desc": "Multiplies this point by a value TODO: rename in scalarMultiplyEquals in 2.0"
+    },
+    {
+      "section": "Methods",
+      "name": "scalarAdd",
+      "hash": "#scalarAdd",
+      "desc": "Adds value to this point and returns a new one"
+    },
+    {
+      "section": "Methods",
+      "name": "scalarAddEquals",
+      "hash": "#scalarAddEquals",
+      "desc": "Adds value to this point"
+    },
+    {
+      "section": "Methods",
+      "name": "scalarSubtract",
+      "hash": "#scalarSubtract",
+      "desc": "Subtracts value from this point and returns a new one"
+    },
+    {
+      "section": "Methods",
+      "name": "scalarSubtractEquals",
+      "hash": "#scalarSubtractEquals",
+      "desc": "Subtracts value from this point"
+    },
+    {
+      "section": "Methods",
+      "name": "setFromPoint",
+      "hash": "#setFromPoint",
+      "desc": "Sets x/y of this point from another point"
+    },
+    {
+      "section": "Methods",
+      "name": "setX",
+      "hash": "#setX",
+      "desc": "Sets x of this point"
+    },
+    {
+      "section": "Methods",
+      "name": "setXY",
+      "hash": "#setXY",
+      "desc": "Sets x/y of this point"
+    },
+    {
+      "section": "Methods",
+      "name": "setY",
+      "hash": "#setY",
+      "desc": "Sets y of this point"
+    },
+    {
+      "section": "Methods",
+      "name": "subtract",
+      "hash": "#subtract",
+      "desc": "Subtracts another point from this point and returns a new one"
+    },
+    {
+      "section": "Methods",
+      "name": "subtractEquals",
+      "hash": "#subtractEquals",
+      "desc": "Subtracts another point from this point"
+    },
+    {
+      "section": "Methods",
+      "name": "swap",
+      "hash": "#swap",
+      "desc": "Swaps x/y of this point and another point"
+    },
+    {
+      "section": "Methods",
+      "name": "toString",
+      "hash": "#toString",
+      "desc": "Returns string representation of this point"
+    }
+  ]
+}

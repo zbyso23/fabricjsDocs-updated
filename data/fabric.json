@@ -1,0 +1,197 @@
+{
+  "file": "fabric.html",
+  "props": [
+    {
+      "section": "Members",
+      "name": "arcToSegmentsCache",
+      "hash": "#.arcToSegmentsCache",
+      "desc": "This object contains the result of arc to bezier conversion for faster retrieving if the same arc needs to be converted again. It was an internal variable, is accessible since version 2.3.4"
+    },
+    {
+      "section": "Members",
+      "name": "boundsOfCurveCache",
+      "hash": "#.boundsOfCurveCache",
+      "desc": "This object keeps the results of the boundsOfCurve calculation mapped by the joined arguments necessary to calculate it. It does speed up calculation, if you parse and add always the same paths, but in case of heavy usage of freedrawing you do not get any speed benefit and you get a big object in memory. The object was a private variable before, while now is appended to the lib so that you have access to it and you can eventually clear it. It was an internal variable, is accessible since version 2.3.4"
+    },
+    {
+      "section": "Members",
+      "name": "browserShadowBlurConstant",
+      "hash": "#.browserShadowBlurConstant",
+      "desc": "Browser-specific constant to adjust CanvasRenderingContext2D.shadowBlur value, which is unitless and not rendered equally across browsers.  Values that work quite well (as of October 2017) are: - Chrome: 1.5 - Edge: 1.75 - Firefox: 0.9 - Safari: 0.95"
+    },
+    {
+      "section": "Members",
+      "name": "cachesBoundsOfCurve",
+      "hash": "#.cachesBoundsOfCurve",
+      "desc": "If disabled boundsOfCurveCache is not used. For apps that make heavy usage of pencil drawing probably disabling it is better"
+    },
+    {
+      "section": "Members",
+      "name": "charWidthsCache",
+      "hash": "#.charWidthsCache",
+      "desc": "Cache Object for widths of chars in text rendering."
+    },
+    {
+      "section": "Members",
+      "name": "devicePixelRatio",
+      "hash": "#.devicePixelRatio",
+      "desc": "Device Pixel Ratio"
+    },
+    {
+      "section": "Members",
+      "name": "disableStyleCopyPaste",
+      "hash": "#.disableStyleCopyPaste",
+      "desc": "When 'true', style information is not retained when copy/pasting text, making pasted text use destination style. Defaults to 'false'."
+    },
+    {
+      "section": "Members",
+      "name": "DPI",
+      "hash": "#.DPI",
+      "desc": "Pixel per Inch as a default value set to 96. Can be changed for more realistic conversion."
+    },
+    {
+      "section": "Members",
+      "name": "enableGLFiltering",
+      "hash": "#.enableGLFiltering",
+      "desc": "Enable webgl for filtering picture is available A filtering backend will be initialized, this will both take memory and time since a default 2048x2048 canvas will be created for the gl context"
+    },
+    {
+      "section": "Members",
+      "name": "forceGLPutImageData",
+      "hash": "#.forceGLPutImageData",
+      "desc": "Skip performance testing of setupGLContext and force the use of putImageData that seems to be the one that works best on Chrome + old hardware. if your users are experiencing empty images after filtering you may try to force this to true this has to be set before instantiating the filtering backend ( before filtering the first image )"
+    },
+    {
+      "section": "Members",
+      "name": "isLikelyNode",
+      "hash": "#.isLikelyNode",
+      "desc": "True when in environment that's probably Node.js"
+    },
+    {
+      "section": "Members",
+      "name": "isTouchSupported",
+      "hash": "#.isTouchSupported",
+      "desc": "True when in environment that supports touch events"
+    },
+    {
+      "section": "Members",
+      "name": "log",
+      "hash": "#.log",
+      "desc": "Wrapper around `console.log` (when available)"
+    },
+    {
+      "section": "Members",
+      "name": "maxCacheSideLimit",
+      "hash": "#.maxCacheSideLimit",
+      "desc": "Pixel limit for cache canvases width or height. IE fixes the maximum at 5000"
+    },
+    {
+      "section": "Members",
+      "name": "minCacheSideLimit",
+      "hash": "#.minCacheSideLimit",
+      "desc": "Lowest pixel limit for cache canvases, set at 256PX"
+    },
+    {
+      "section": "Members",
+      "name": "perfLimitSizeTotal",
+      "hash": "#.perfLimitSizeTotal",
+      "desc": "Pixel limit for cache canvases. 1Mpx , 4Mpx should be fine."
+    },
+    {
+      "section": "Members",
+      "name": "RUNNING_ANIMATIONS",
+      "hash": "#.RUNNING_ANIMATIONS",
+      "desc": "Array holding all running animations"
+    },
+    {
+      "section": "Members",
+      "name": "SHARED_ATTRIBUTES",
+      "hash": "#.SHARED_ATTRIBUTES",
+      "desc": "Attributes parsed from all SVG elements"
+    },
+    {
+      "section": "Members",
+      "name": "textureSize",
+      "hash": "#.textureSize",
+      "desc": "if webgl is enabled and available, textureSize will determine the size of the canvas backend"
+    },
+    {
+      "section": "Members",
+      "name": "warn",
+      "hash": "#.warn",
+      "desc": "Wrapper around `console.warn` (when available)"
+    },
+    {
+      "section": "Methods",
+      "name": "getCSSRules",
+      "hash": "#.getCSSRules",
+      "desc": "Returns CSS rules for a given SVG document"
+    },
+    {
+      "section": "Methods",
+      "name": "getGradientDefs",
+      "hash": "#.getGradientDefs",
+      "desc": "Parses an SVG document, returning all of the gradient declarations found in it"
+    },
+    {
+      "section": "Methods",
+      "name": "isWebglSupported",
+      "hash": "#.isWebglSupported",
+      "desc": "Indicate whether this filtering backend is supported by the user's browser."
+    },
+    {
+      "section": "Methods",
+      "name": "loadSVGFromString",
+      "hash": "#.loadSVGFromString",
+      "desc": "Takes string corresponding to an SVG document, and parses it into a set of fabric objects"
+    },
+    {
+      "section": "Methods",
+      "name": "loadSVGFromURL",
+      "hash": "#.loadSVGFromURL",
+      "desc": "Takes url corresponding to an SVG document, and parses it into a set of fabric objects. Note that SVG is fetched via XMLHttpRequest, so it needs to conform to SOP (Same Origin Policy)"
+    },
+    {
+      "section": "Methods",
+      "name": "parseAttributes",
+      "hash": "#.parseAttributes",
+      "desc": "Returns an object of attributes' name/value, given element and an array of attribute names; Parses parent \"g\" nodes recursively upwards."
+    },
+    {
+      "section": "Methods",
+      "name": "parseElements",
+      "hash": "#.parseElements",
+      "desc": "Transforms an array of svg elements to corresponding fabric.* instances"
+    },
+    {
+      "section": "Methods",
+      "name": "parseFontDeclaration",
+      "hash": "#.parseFontDeclaration",
+      "desc": "Parses a short font declaration, building adding its properties to a style object"
+    },
+    {
+      "section": "Methods",
+      "name": "parsePointsAttribute",
+      "hash": "#.parsePointsAttribute",
+      "desc": "Parses \"points\" attribute, returning an array of values"
+    },
+    {
+      "section": "Methods",
+      "name": "parseStyleAttribute",
+      "hash": "#.parseStyleAttribute",
+      "desc": "Parses \"style\" attribute, retuning an object with values"
+    },
+    {
+      "section": "Methods",
+      "name": "parseSVGDocument",
+      "hash": "#.parseSVGDocument",
+      "desc": "Parses an SVG document, converts it to an array of corresponding fabric.* instances and passes them to a callback"
+    },
+    {
+      "section": "Methods",
+      "name": "parseTransformAttribute",
+      "hash": "#.parseTransformAttribute",
+      "desc": "Parses \"transform\" attribute, returning an array of values"
+    }
+  ]
+}

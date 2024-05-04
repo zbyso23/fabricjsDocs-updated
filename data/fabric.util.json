@@ -1,0 +1,431 @@
+{
+  "file": "fabric.util.html",
+  "props": [
+    {
+      "section": "Members",
+      "name": "getElementStyle",
+      "hash": "#.getElementStyle",
+      "desc": "Returns style attribute value of a given element"
+    },
+    {
+      "section": "Members",
+      "name": "setImageSmoothing",
+      "hash": "#.setImageSmoothing",
+      "desc": "setImageSmoothing sets the context imageSmoothingEnabled property. Used by canvas and by ImageObject."
+    },
+    {
+      "section": "Methods",
+      "name": "addClass",
+      "hash": "#.addClass",
+      "desc": "Adds class to an element"
+    },
+    {
+      "section": "Methods",
+      "name": "addListener",
+      "hash": "#.addListener",
+      "desc": "Adds an event listener to an element"
+    },
+    {
+      "section": "Methods",
+      "name": "addTransformToObject",
+      "hash": "#.addTransformToObject",
+      "desc": "given an object and a transform, apply the transform to the object. this is equivalent to change the space where the object is drawn. Adding to an object a transform that scale by 2 is like scaling it by 2. This is used when removing an object from an active selection for example."
+    },
+    {
+      "section": "Methods",
+      "name": "animate",
+      "hash": "#.animate",
+      "desc": "Changes value from one to another within certain period of time, invoking callbacks as value is being changed."
+    },
+    {
+      "section": "Methods",
+      "name": "animateColor",
+      "hash": "#.animateColor",
+      "desc": "Changes the color from one to another within certain period of time, invoking callbacks as value is being changed."
+    },
+    {
+      "section": "Methods",
+      "name": "applyTransformToObject",
+      "hash": "#.applyTransformToObject",
+      "desc": "discard an object transform state and apply the one from the matrix."
+    },
+    {
+      "section": "Methods",
+      "name": "calcAngleBetweenVectors",
+      "hash": "#.calcAngleBetweenVectors",
+      "desc": "Calculates angle between 2 vectors using dot product"
+    },
+    {
+      "section": "Methods",
+      "name": "calcDimensionsMatrix",
+      "hash": "#.calcDimensionsMatrix",
+      "desc": "Returns a transform matrix starting from an object of the same kind of the one returned from qrDecompose, useful also if you want to calculate some transformations from an object that is not enlived yet. is called DimensionsTransformMatrix because those properties are the one that influence the size of the resulting box of the object."
+    },
+    {
+      "section": "Methods",
+      "name": "calcRotateMatrix",
+      "hash": "#.calcRotateMatrix",
+      "desc": "Returns a transform matrix starting from an object of the same kind of the one returned from qrDecompose, useful also if you want to calculate some transformations from an object that is not enlived yet"
+    },
+    {
+      "section": "Methods",
+      "name": "clearFabricFontCache",
+      "hash": "#.clearFabricFontCache",
+      "desc": "Clear char widths cache for the given font family or all the cache if no fontFamily is specified. Use it if you know you are loading fonts in a lazy way and you are not waiting for custom fonts to load properly when adding text objects to the canvas. If a text object is added when its own font is not loaded yet, you will get wrong measurement and so wrong bounding boxes. After the font cache is cleared, either change the textObject text content or call initDimensions() to trigger a recalculation"
+    },
+    {
+      "section": "Methods",
+      "name": "composeMatrix",
+      "hash": "#.composeMatrix",
+      "desc": "Returns a transform matrix starting from an object of the same kind of the one returned from qrDecompose, useful also if you want to calculate some transformations from an object that is not enlived yet"
+    },
+    {
+      "section": "Methods",
+      "name": "copyCanvasElement",
+      "hash": "#.copyCanvasElement",
+      "desc": "Creates a canvas element that is a copy of another and is also painted"
+    },
+    {
+      "section": "Methods",
+      "name": "cos",
+      "hash": "#.cos",
+      "desc": "Calculate the cos of an angle, avoiding returning floats for known results"
+    },
+    {
+      "section": "Methods",
+      "name": "createCanvasElement",
+      "hash": "#.createCanvasElement",
+      "desc": "Creates canvas element"
+    },
+    {
+      "section": "Methods",
+      "name": "createClass",
+      "hash": "#.createClass",
+      "desc": "Helper for creation of \"classes\"."
+    },
+    {
+      "section": "Methods",
+      "name": "createImage",
+      "hash": "#.createImage",
+      "desc": "Creates image element (works on client and node)"
+    },
+    {
+      "section": "Methods",
+      "name": "degreesToRadians",
+      "hash": "#.degreesToRadians",
+      "desc": "Transforms degrees to radians."
+    },
+    {
+      "section": "Methods",
+      "name": "enlivenObjectEnlivables",
+      "hash": "#.enlivenObjectEnlivables",
+      "desc": "Creates corresponding fabric instances residing in an object, e.g. `clipPath`"
+    },
+    {
+      "section": "Methods",
+      "name": "enlivenObjects",
+      "hash": "#.enlivenObjects",
+      "desc": "Creates corresponding fabric instances from their object representations"
+    },
+    {
+      "section": "Methods",
+      "name": "enlivenPatterns",
+      "hash": "#.enlivenPatterns",
+      "desc": "Create and wait for loading of patterns"
+    },
+    {
+      "section": "Methods",
+      "name": "falseFunction",
+      "hash": "#.falseFunction",
+      "desc": "Function which always returns `false`."
+    },
+    {
+      "section": "Methods",
+      "name": "findScaleToCover",
+      "hash": "#.findScaleToCover",
+      "desc": "Finds the scale for the object source to cover entirely the object destination, keeping aspect ratio intact. respect the total allowed area for the cache."
+    },
+    {
+      "section": "Methods",
+      "name": "findScaleToFit",
+      "hash": "#.findScaleToFit",
+      "desc": "Finds the scale for the object source to fit inside the object destination, keeping aspect ratio intact. respect the total allowed area for the cache."
+    },
+    {
+      "section": "Methods",
+      "name": "getBisector",
+      "hash": "#.getBisector",
+      "desc": null
+    },
+    {
+      "section": "Methods",
+      "name": "getById",
+      "hash": "#.getById",
+      "desc": "Takes id and returns an element with that id (if one exists in a document)"
+    },
+    {
+      "section": "Methods",
+      "name": "getElementOffset",
+      "hash": "#.getElementOffset",
+      "desc": "Returns offset for a given element"
+    },
+    {
+      "section": "Methods",
+      "name": "getHatVector",
+      "hash": "#.getHatVector",
+      "desc": null
+    },
+    {
+      "section": "Methods",
+      "name": "getKlass",
+      "hash": "#.getKlass",
+      "desc": "Returns klass \"Class\" object of given namespace"
+    },
+    {
+      "section": "Methods",
+      "name": "getRandomInt",
+      "hash": "#.getRandomInt",
+      "desc": "Returns random number between 2 specified ones."
+    },
+    {
+      "section": "Methods",
+      "name": "getScrollLeftTop",
+      "hash": "#.getScrollLeftTop",
+      "desc": "Returns element scroll offsets"
+    },
+    {
+      "section": "Methods",
+      "name": "getSvgAttributes",
+      "hash": "#.getSvgAttributes",
+      "desc": "Returns array of attributes for given svg that fabric parses"
+    },
+    {
+      "section": "Methods",
+      "name": "groupSVGElements",
+      "hash": "#.groupSVGElements",
+      "desc": "Groups SVG elements (usually those retrieved from SVG document)"
+    },
+    {
+      "section": "Methods",
+      "name": "invertTransform",
+      "hash": "#.invertTransform",
+      "desc": "Invert transformation t"
+    },
+    {
+      "section": "Methods",
+      "name": "isTransparent",
+      "hash": "#.isTransparent",
+      "desc": "Returns true if context has transparent pixel at specified location (taking tolerance into account)"
+    },
+    {
+      "section": "Methods",
+      "name": "joinPath",
+      "hash": "#.joinPath",
+      "desc": "Join path commands to go back to svg format"
+    },
+    {
+      "section": "Methods",
+      "name": "limitDimsByArea",
+      "hash": "#.limitDimsByArea",
+      "desc": "Given current aspect ratio, determines the max width and height that can respect the total allowed area for the cache."
+    },
+    {
+      "section": "Methods",
+      "name": "loadImage",
+      "hash": "#.loadImage",
+      "desc": "Loads image element from given url and passes it to a callback"
+    },
+    {
+      "section": "Methods",
+      "name": "loadImageInDom",
+      "hash": "#.loadImageInDom",
+      "desc": "Attaches SVG image with data: URL to the dom"
+    },
+    {
+      "section": "Methods",
+      "name": "makeBoundingBoxFromPoints",
+      "hash": "#.makeBoundingBoxFromPoints",
+      "desc": "Returns coordinates of points's bounding rectangle (left, top, width, height)"
+    },
+    {
+      "section": "Methods",
+      "name": "makeElement",
+      "hash": "#.makeElement",
+      "desc": "Creates specified element with specified attributes"
+    },
+    {
+      "section": "Methods",
+      "name": "makeElementSelectable",
+      "hash": "#.makeElementSelectable",
+      "desc": "Makes element selectable"
+    },
+    {
+      "section": "Methods",
+      "name": "makeElementUnselectable",
+      "hash": "#.makeElementUnselectable",
+      "desc": "Makes element unselectable"
+    },
+    {
+      "section": "Methods",
+      "name": "matrixToSVG",
+      "hash": "#.matrixToSVG",
+      "desc": "given an array of 6 number returns something like `\"matrix(...numbers)\"`"
+    },
+    {
+      "section": "Methods",
+      "name": "mergeClipPaths",
+      "hash": "#.mergeClipPaths",
+      "desc": "Merges 2 clip paths into one visually equal clip path  **IMPORTANT**:\\ Does **NOT** clone the arguments, clone them proir if necessary.  Creates a wrapper (group) that contains one clip path and is clipped by the other so content is kept where both overlap. Use this method if both the clip paths may have nested clip paths of their own, so assigning one to the other's clip path property is not possible.  In order to handle the `inverted` property we follow logic described in the following cases:\\ **(1)** both clip paths are inverted - the clip paths pass the inverted prop to the wrapper and loose it themselves.\\ **(2)** one is inverted and the other isn't - the wrapper shouldn't become inverted and the inverted clip path must clip the non inverted one to produce an identical visual effect.\\ **(3)** both clip paths are not inverted - wrapper and clip paths remain unchanged."
+    },
+    {
+      "section": "Methods",
+      "name": "multiplyTransformMatrices",
+      "hash": "#.multiplyTransformMatrices",
+      "desc": "Multiply matrix A by matrix B to nest transformations"
+    },
+    {
+      "section": "Methods",
+      "name": "parsePreserveAspectRatioAttribute",
+      "hash": "#.parsePreserveAspectRatioAttribute",
+      "desc": "Parse preserveAspectRatio attribute from element"
+    },
+    {
+      "section": "Methods",
+      "name": "parseUnit",
+      "hash": "#.parseUnit",
+      "desc": "Converts from attribute value to pixel value if applicable. Returns converted pixels or original value not converted."
+    },
+    {
+      "section": "Methods",
+      "name": "populateWithProperties",
+      "hash": "#.populateWithProperties",
+      "desc": "Populates an object with properties of another object"
+    },
+    {
+      "section": "Methods",
+      "name": "projectStrokeOnPoints",
+      "hash": "#.projectStrokeOnPoints",
+      "desc": "Project stroke width on points returning 2 projections for each point as follows: - `miter`: 2 points corresponding to the outer boundary and the inner boundary of stroke. - `bevel`: 2 points corresponding to the bevel boundaries, tangent to the bisector. - `round`: same as `bevel` Used to calculate object's bounding box"
+    },
+    {
+      "section": "Methods",
+      "name": "qrDecompose",
+      "hash": "#.qrDecompose",
+      "desc": "Decomposes standard 2x3 matrix into transform components"
+    },
+    {
+      "section": "Methods",
+      "name": "radiansToDegrees",
+      "hash": "#.radiansToDegrees",
+      "desc": "Transforms radians to degrees."
+    },
+    {
+      "section": "Methods",
+      "name": "removeFromArray",
+      "hash": "#.removeFromArray",
+      "desc": "Removes value from an array. Presence of value (and its position in an array) is determined via `Array.prototype.indexOf`"
+    },
+    {
+      "section": "Methods",
+      "name": "removeListener",
+      "hash": "#.removeListener",
+      "desc": "Removes an event listener from an element"
+    },
+    {
+      "section": "Methods",
+      "name": "removeTransformFromObject",
+      "hash": "#.removeTransformFromObject",
+      "desc": "given an object and a transform, apply the inverse transform to the object, this is equivalent to remove from that object that transformation, so that added in a space with the removed transform, the object will be the same as before. Removing from an object a transform that scale by 2 is like scaling it by 1/2. Removing from an object a transfrom that rotate by 30deg is like rotating by 30deg in the opposite direction. This util is used to add objects inside transformed groups or nested groups."
+    },
+    {
+      "section": "Methods",
+      "name": "request",
+      "hash": "#.request",
+      "desc": "Cross-browser abstraction for sending XMLHttpRequest"
+    },
+    {
+      "section": "Methods",
+      "name": "requestAnimFrame",
+      "hash": "#.requestAnimFrame",
+      "desc": "requestAnimationFrame polyfill based on http://paulirish.com/2011/requestanimationframe-for-smart-animating/ In order to get a precise start time, `requestAnimFrame` should be called as an entry into the method"
+    },
+    {
+      "section": "Methods",
+      "name": "resetObjectTransform",
+      "hash": "#.resetObjectTransform",
+      "desc": "reset an object transform state to neutral. Top and left are not accounted for"
+    },
+    {
+      "section": "Methods",
+      "name": "resolveNamespace",
+      "hash": "#.resolveNamespace",
+      "desc": "Returns object of given namespace"
+    },
+    {
+      "section": "Methods",
+      "name": "rotatePoint",
+      "hash": "#.rotatePoint",
+      "desc": "Rotates `point` around `origin` with `radians`"
+    },
+    {
+      "section": "Methods",
+      "name": "rotateVector",
+      "hash": "#.rotateVector",
+      "desc": "Rotates `vector` with `radians`"
+    },
+    {
+      "section": "Methods",
+      "name": "saveObjectTransform",
+      "hash": "#.saveObjectTransform",
+      "desc": "Extract Object transform values"
+    },
+    {
+      "section": "Methods",
+      "name": "setStyle",
+      "hash": "#.setStyle",
+      "desc": "Cross-browser wrapper for setting element's style"
+    },
+    {
+      "section": "Methods",
+      "name": "sin",
+      "hash": "#.sin",
+      "desc": "Calculate the sin of an angle, avoiding returning floats for known results"
+    },
+    {
+      "section": "Methods",
+      "name": "sizeAfterTransform",
+      "hash": "#.sizeAfterTransform",
+      "desc": "given a width and height, return the size of the bounding box that can contains the box with width/height with applied transform described in options. Use to calculate the boxes around objects for controls."
+    },
+    {
+      "section": "Methods",
+      "name": "toArray",
+      "hash": "#.toArray",
+      "desc": "Converts an array-like object (e.g. arguments or NodeList) to an array"
+    },
+    {
+      "section": "Methods",
+      "name": "toDataURL",
+      "hash": "#.toDataURL",
+      "desc": "since 2.6.0 moved from canvas instance to utility."
+    },
+    {
+      "section": "Methods",
+      "name": "toFixed",
+      "hash": "#.toFixed",
+      "desc": "A wrapper around Number#toFixed, which contrary to native method returns number, not string."
+    },
+    {
+      "section": "Methods",
+      "name": "transformPoint",
+      "hash": "#.transformPoint",
+      "desc": "Apply transform t to point p"
+    },
+    {
+      "section": "Methods",
+      "name": "wrapElement",
+      "hash": "#.wrapElement",
+      "desc": "Wraps element with another element"
+    }
+  ]
+}

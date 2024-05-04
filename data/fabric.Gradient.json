@@ -1,0 +1,77 @@
+{
+  "file": "fabric.Gradient.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new Gradient",
+      "hash": "#Gradient",
+      "desc": "Gradient class"
+    },
+    {
+      "section": "Members",
+      "name": "gradientTransform",
+      "hash": "#gradientTransform",
+      "desc": "A transform matrix to apply to the gradient before painting. Imported from svg gradients, is not applied with the current transform in the center. Before this transform is applied, the origin point is at the top left corner of the object plus the addition of offsetY and offsetX."
+    },
+    {
+      "section": "Members",
+      "name": "gradientUnits",
+      "hash": "#gradientUnits",
+      "desc": "coordinates units for coords. If `pixels`, the number of coords are in the same unit of width / height. If set as `percentage` the coords are still a number, but 1 means 100% of width for the X and 100% of the height for the y. It can be bigger than 1 and negative. allowed values pixels or percentage."
+    },
+    {
+      "section": "Members",
+      "name": "offsetX",
+      "hash": "#offsetX",
+      "desc": "Horizontal offset for aligning gradients coming from SVG when outside pathgroups"
+    },
+    {
+      "section": "Members",
+      "name": "offsetY",
+      "hash": "#offsetY",
+      "desc": "Vertical offset for aligning gradients coming from SVG when outside pathgroups"
+    },
+    {
+      "section": "Members",
+      "name": "type",
+      "hash": "#type",
+      "desc": "Gradient type linear or radial"
+    },
+    {
+      "section": "Methods",
+      "name": "fromElement",
+      "hash": "#.fromElement",
+      "desc": "Returns"
+    },
+    {
+      "section": "Methods",
+      "name": "addColorStop",
+      "hash": "#addColorStop",
+      "desc": "Adds another colorStop"
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "toLive",
+      "hash": "#toLive",
+      "desc": "Returns an instance of CanvasGradient"
+    },
+    {
+      "section": "Methods",
+      "name": "toObject",
+      "hash": "#toObject",
+      "desc": "Returns object representation of a gradient"
+    },
+    {
+      "section": "Methods",
+      "name": "toSVG",
+      "hash": "#toSVG",
+      "desc": "Returns SVG representation of an gradient"
+    }
+  ]
+}

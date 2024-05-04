@@ -1,0 +1,65 @@
+{
+  "file": "fabric.Pattern.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new Pattern",
+      "hash": "#Pattern",
+      "desc": "Pattern class"
+    },
+    {
+      "section": "Members",
+      "name": "crossOrigin",
+      "hash": "#crossOrigin",
+      "desc": "crossOrigin value (one of \"\", \"anonymous\", \"use-credentials\")"
+    },
+    {
+      "section": "Members",
+      "name": "offsetX",
+      "hash": "#offsetX",
+      "desc": "Pattern horizontal offset from object's left/top corner"
+    },
+    {
+      "section": "Members",
+      "name": "offsetY",
+      "hash": "#offsetY",
+      "desc": "Pattern vertical offset from object's left/top corner"
+    },
+    {
+      "section": "Members",
+      "name": "patternTransform",
+      "hash": "#patternTransform",
+      "desc": "transform matrix to change the pattern, imported from svgs."
+    },
+    {
+      "section": "Members",
+      "name": "repeat",
+      "hash": "#repeat",
+      "desc": "Repeat property of a pattern (one of repeat, repeat-x, repeat-y or no-repeat)"
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "toLive",
+      "hash": "#toLive",
+      "desc": "Returns an instance of CanvasPattern"
+    },
+    {
+      "section": "Methods",
+      "name": "toObject",
+      "hash": "#toObject",
+      "desc": "Returns object representation of a pattern"
+    },
+    {
+      "section": "Methods",
+      "name": "toSVG",
+      "hash": "#toSVG",
+      "desc": "Returns SVG representation of a pattern"
+    }
+  ]
+}

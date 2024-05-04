@@ -1,0 +1,113 @@
+{
+  "file": "fabric.Image.filters.Invert.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new Invert",
+      "hash": "#Invert",
+      "desc": "Invert filter class"
+    },
+    {
+      "section": "Members",
+      "name": "invert",
+      "hash": "#invert",
+      "desc": "Filter invert. if false, does nothing"
+    },
+    {
+      "section": "Members",
+      "name": "type",
+      "hash": "#type",
+      "desc": "Filter type"
+    },
+    {
+      "section": "Methods",
+      "name": "applyTo",
+      "hash": "#applyTo",
+      "desc": "Apply this filter to the input image data provided.  Determines whether to use WebGL or Canvas2D based on the options.webgl flag."
+    },
+    {
+      "section": "Methods",
+      "name": "applyTo2d",
+      "hash": "#applyTo2d",
+      "desc": "Apply the Invert operation to a Uint8Array representing the pixels of an image."
+    },
+    {
+      "section": "Methods",
+      "name": "applyToWebGL",
+      "hash": "#applyToWebGL",
+      "desc": "Apply this filter using webgl."
+    },
+    {
+      "section": "Methods",
+      "name": "createHelpLayer",
+      "hash": "#createHelpLayer",
+      "desc": "If needed by a 2d filter, this functions can create an helper canvas to be used remember that options.targetCanvas is available for use till end of chain."
+    },
+    {
+      "section": "Methods",
+      "name": "createProgram",
+      "hash": "#createProgram",
+      "desc": "Compile this filter's shader program."
+    },
+    {
+      "section": "Methods",
+      "name": "getAttributeLocations",
+      "hash": "#getAttributeLocations",
+      "desc": "Return a map of attribute names to WebGLAttributeLocation objects."
+    },
+    {
+      "section": "Methods",
+      "name": "getUniformLocations",
+      "hash": "#getUniformLocations",
+      "desc": "Return WebGL uniform locations for this filter's shader."
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "isNeutralState",
+      "hash": "#isNeutralState",
+      "desc": "Invert filter isNeutralState implementation Used only in image applyFilters to discard filters that will not have an effect on the image"
+    },
+    {
+      "section": "Methods",
+      "name": "retrieveShader",
+      "hash": "#retrieveShader",
+      "desc": "Retrieves the cached shader."
+    },
+    {
+      "section": "Methods",
+      "name": "sendAttributeData",
+      "hash": "#sendAttributeData",
+      "desc": "Send attribute data from this filter to its shader program on the GPU."
+    },
+    {
+      "section": "Methods",
+      "name": "sendUniformData",
+      "hash": "#sendUniformData",
+      "desc": "Send data from this filter to its shader program's uniforms."
+    },
+    {
+      "section": "Methods",
+      "name": "setOptions",
+      "hash": "#setOptions",
+      "desc": "Sets filter's properties from options"
+    },
+    {
+      "section": "Methods",
+      "name": "toJSON",
+      "hash": "#toJSON",
+      "desc": "Returns a JSON representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "toObject",
+      "hash": "#toObject",
+      "desc": "Returns object representation of an instance"
+    }
+  ]
+}

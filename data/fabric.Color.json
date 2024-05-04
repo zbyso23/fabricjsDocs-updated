@@ -1,0 +1,167 @@
+{
+  "file": "fabric.Color.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new Color",
+      "hash": "#Color",
+      "desc": "Color class The purpose of"
+    },
+    {
+      "section": "Members",
+      "name": "colorNameMap",
+      "hash": "#.colorNameMap",
+      "desc": "Map of the 148 color names with HEX code"
+    },
+    {
+      "section": "Members",
+      "name": "reHex",
+      "hash": "#.reHex",
+      "desc": "Regex matching color in HEX format (ex: #FF5544CC, #FF5555, 010155, aff)"
+    },
+    {
+      "section": "Members",
+      "name": "reHSLa",
+      "hash": "#.reHSLa",
+      "desc": "Regex matching color in HSL or HSLA formats (ex: hsl(200, 80%, 10%), hsla(300, 50%, 80%, 0.5), hsla( 300 , 50% , 80% , 0.5 ))"
+    },
+    {
+      "section": "Members",
+      "name": "reRGBa",
+      "hash": "#.reRGBa",
+      "desc": "Regex matching color in RGB or RGBA formats (ex: rgb(0, 0, 0), rgba(255, 100, 10, 0.5), rgba( 255 , 100 , 10 , 0.5 ), rgb(1,1,1), rgba(100%, 60%, 10%, 0.5))"
+    },
+    {
+      "section": "Methods",
+      "name": "fromHex",
+      "hash": "#.fromHex",
+      "desc": "Returns new color object, when given a color in HEX format"
+    },
+    {
+      "section": "Methods",
+      "name": "fromHsl",
+      "hash": "#.fromHsl",
+      "desc": "Returns new color object, when given a color in HSL format"
+    },
+    {
+      "section": "Methods",
+      "name": "fromHsla",
+      "hash": "#.fromHsla",
+      "desc": "Returns new color object, when given a color in HSLA format"
+    },
+    {
+      "section": "Methods",
+      "name": "fromRgb",
+      "hash": "#.fromRgb",
+      "desc": "Returns new color object, when given a color in RGB format"
+    },
+    {
+      "section": "Methods",
+      "name": "fromRgba",
+      "hash": "#.fromRgba",
+      "desc": "Returns new color object, when given a color in RGBA format"
+    },
+    {
+      "section": "Methods",
+      "name": "fromSource",
+      "hash": "#.fromSource",
+      "desc": "Returns new color object, when given color in array representation (ex: [200, 100, 100, 0.5])"
+    },
+    {
+      "section": "Methods",
+      "name": "sourceFromHex",
+      "hash": "#.sourceFromHex",
+      "desc": "Returns array representation (ex: [100, 100, 200, 1]) of a color that's in HEX format"
+    },
+    {
+      "section": "Methods",
+      "name": "sourceFromHsl",
+      "hash": "#.sourceFromHsl",
+      "desc": "Returns array representation (ex: [100, 100, 200, 1]) of a color that's in HSL or HSLA format. Adapted from"
+    },
+    {
+      "section": "Methods",
+      "name": "sourceFromRgb",
+      "hash": "#.sourceFromRgb",
+      "desc": "Returns array representation (ex: [100, 100, 200, 1]) of a color that's in RGB or RGBA format"
+    },
+    {
+      "section": "Methods",
+      "name": "getAlpha",
+      "hash": "#getAlpha",
+      "desc": "Gets value of alpha channel for this color"
+    },
+    {
+      "section": "Methods",
+      "name": "getSource",
+      "hash": "#getSource",
+      "desc": "Returns source of this color (where source is an array representation; ex: [200, 200, 100, 1])"
+    },
+    {
+      "section": "Methods",
+      "name": "overlayWith",
+      "hash": "#overlayWith",
+      "desc": "Overlays color with another color"
+    },
+    {
+      "section": "Methods",
+      "name": "setAlpha",
+      "hash": "#setAlpha",
+      "desc": "Sets value of alpha channel for this color"
+    },
+    {
+      "section": "Methods",
+      "name": "setSource",
+      "hash": "#setSource",
+      "desc": "Sets source of this color (where source is an array representation; ex: [200, 200, 100, 1])"
+    },
+    {
+      "section": "Methods",
+      "name": "toBlackWhite",
+      "hash": "#toBlackWhite",
+      "desc": "Transforms color to its black and white representation"
+    },
+    {
+      "section": "Methods",
+      "name": "toGrayscale",
+      "hash": "#toGrayscale",
+      "desc": "Transforms color to its grayscale representation"
+    },
+    {
+      "section": "Methods",
+      "name": "toHex",
+      "hash": "#toHex",
+      "desc": "Returns color representation in HEX format"
+    },
+    {
+      "section": "Methods",
+      "name": "toHexa",
+      "hash": "#toHexa",
+      "desc": "Returns color representation in HEXA format"
+    },
+    {
+      "section": "Methods",
+      "name": "toHsl",
+      "hash": "#toHsl",
+      "desc": "Returns color representation in HSL format"
+    },
+    {
+      "section": "Methods",
+      "name": "toHsla",
+      "hash": "#toHsla",
+      "desc": "Returns color representation in HSLA format"
+    },
+    {
+      "section": "Methods",
+      "name": "toRgb",
+      "hash": "#toRgb",
+      "desc": "Returns color representation in RGB format"
+    },
+    {
+      "section": "Methods",
+      "name": "toRgba",
+      "hash": "#toRgba",
+      "desc": "Returns color representation in RGBA format"
+    }
+  ]
+}

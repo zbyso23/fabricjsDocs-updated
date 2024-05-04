@@ -1,0 +1,23 @@
+{
+  "file": "fabric.Intersection.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new Intersection",
+      "hash": "#Intersection",
+      "desc": "Intersection class"
+    },
+    {
+      "section": "Methods",
+      "name": "appendPoint",
+      "hash": "#appendPoint",
+      "desc": "Appends a point to intersection"
+    },
+    {
+      "section": "Methods",
+      "name": "appendPoints",
+      "hash": "#appendPoints",
+      "desc": "Appends points to intersection"
+    }
+  ]
+}

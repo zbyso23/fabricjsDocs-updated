@@ -1,0 +1,185 @@
+{
+  "file": "fabric.util.ease.html",
+  "props": [
+    {
+      "section": "Methods",
+      "name": "easeInBack",
+      "hash": "#.easeInBack",
+      "desc": "Backwards easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInBounce",
+      "hash": "#.easeInBounce",
+      "desc": "Bouncing easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInCirc",
+      "hash": "#.easeInCirc",
+      "desc": "Circular easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInCubic",
+      "hash": "#.easeInCubic",
+      "desc": "Cubic easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInElastic",
+      "hash": "#.easeInElastic",
+      "desc": "Elastic easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInExpo",
+      "hash": "#.easeInExpo",
+      "desc": "Exponential easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutBack",
+      "hash": "#.easeInOutBack",
+      "desc": "Backwards easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutBounce",
+      "hash": "#.easeInOutBounce",
+      "desc": "Bouncing easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutCirc",
+      "hash": "#.easeInOutCirc",
+      "desc": "Circular easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutCubic",
+      "hash": "#.easeInOutCubic",
+      "desc": "Cubic easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutElastic",
+      "hash": "#.easeInOutElastic",
+      "desc": "Elastic easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutExpo",
+      "hash": "#.easeInOutExpo",
+      "desc": "Exponential easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutQuad",
+      "hash": "#.easeInOutQuad",
+      "desc": "Quadratic easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutQuart",
+      "hash": "#.easeInOutQuart",
+      "desc": "Quartic easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutQuint",
+      "hash": "#.easeInOutQuint",
+      "desc": "Quintic easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInOutSine",
+      "hash": "#.easeInOutSine",
+      "desc": "Sinusoidal easing in and out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInQuad",
+      "hash": "#.easeInQuad",
+      "desc": "Quadratic easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInQuart",
+      "hash": "#.easeInQuart",
+      "desc": "Quartic easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInQuint",
+      "hash": "#.easeInQuint",
+      "desc": "Quintic easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeInSine",
+      "hash": "#.easeInSine",
+      "desc": "Sinusoidal easing in"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutBack",
+      "hash": "#.easeOutBack",
+      "desc": "Backwards easing out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutBounce",
+      "hash": "#.easeOutBounce",
+      "desc": "Bouncing easing out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutCirc",
+      "hash": "#.easeOutCirc",
+      "desc": "Circular easing out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutCubic",
+      "hash": "#.easeOutCubic",
+      "desc": "Cubic easing out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutElastic",
+      "hash": "#.easeOutElastic",
+      "desc": "Elastic easing out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutExpo",
+      "hash": "#.easeOutExpo",
+      "desc": "Exponential easing out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutQuad",
+      "hash": "#.easeOutQuad",
+      "desc": "Quadratic easing out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutQuart",
+      "hash": "#.easeOutQuart",
+      "desc": "Quartic easing out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutQuint",
+      "hash": "#.easeOutQuint",
+      "desc": "Quintic easing out"
+    },
+    {
+      "section": "Methods",
+      "name": "easeOutSine",
+      "hash": "#.easeOutSine",
+      "desc": "Sinusoidal easing out"
+    }
+  ]
+}

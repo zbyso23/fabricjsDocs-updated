@@ -1,0 +1,131 @@
+{
+  "file": "fabric.PencilBrush.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new PencilBrush",
+      "hash": "#PencilBrush",
+      "desc": "PencilBrush class"
+    },
+    {
+      "section": "Members",
+      "name": "color",
+      "hash": "#color",
+      "desc": "Color of a brush"
+    },
+    {
+      "section": "Members",
+      "name": "decimate",
+      "hash": "#decimate",
+      "desc": "Discard points that are less than `decimate` pixel distant from each other"
+    },
+    {
+      "section": "Members",
+      "name": "drawStraightLine",
+      "hash": "#drawStraightLine",
+      "desc": "Draws a straight line between last recorded point to current pointer Used for `shift` functionality"
+    },
+    {
+      "section": "Members",
+      "name": "limitedToCanvasSize",
+      "hash": "#limitedToCanvasSize",
+      "desc": "When `true`, the free drawing is limited to the whiteboard size. Default to false."
+    },
+    {
+      "section": "Members",
+      "name": "shadow",
+      "hash": "#shadow",
+      "desc": "Shadow object representing shadow of this shape."
+    },
+    {
+      "section": "Members",
+      "name": "straightLineKey",
+      "hash": "#straightLineKey",
+      "desc": "The event modifier key that makes the brush draw a straight line. If `null` or 'none' or any other string that is not a modifier key the feature is disabled."
+    },
+    {
+      "section": "Members",
+      "name": "strokeDashArray",
+      "hash": "#strokeDashArray",
+      "desc": "Stroke Dash Array."
+    },
+    {
+      "section": "Members",
+      "name": "strokeLineCap",
+      "hash": "#strokeLineCap",
+      "desc": "Line endings style of a brush (one of \"butt\", \"round\", \"square\")"
+    },
+    {
+      "section": "Members",
+      "name": "strokeLineJoin",
+      "hash": "#strokeLineJoin",
+      "desc": "Corner style of a brush (one of \"bevel\", \"round\", \"miter\")"
+    },
+    {
+      "section": "Members",
+      "name": "strokeMiterLimit",
+      "hash": "#strokeMiterLimit",
+      "desc": "Maximum miter length (used for strokeLineJoin = \"miter\") of a brush's"
+    },
+    {
+      "section": "Members",
+      "name": "width",
+      "hash": "#width",
+      "desc": "Width of a brush, has to be a Number, no string literals"
+    },
+    {
+      "section": "Methods",
+      "name": "_drawSegment",
+      "hash": "#_drawSegment",
+      "desc": "Invoked inside on mouse down and mouse move"
+    },
+    {
+      "section": "Methods",
+      "name": "_finalizeAndAddPath",
+      "hash": "#_finalizeAndAddPath",
+      "desc": "On mouseup after drawing the path on contextTop canvas we use the points captured to create an new fabric path object and add it to the fabric canvas."
+    },
+    {
+      "section": "Methods",
+      "name": "convertPointsToSVGPath",
+      "hash": "#convertPointsToSVGPath",
+      "desc": "Converts points to SVG path"
+    },
+    {
+      "section": "Methods",
+      "name": "createPath",
+      "hash": "#createPath",
+      "desc": "Creates fabric.Path object to add on canvas"
+    },
+    {
+      "section": "Methods",
+      "name": "decimatePoints",
+      "hash": "#decimatePoints",
+      "desc": "Decimate points array with the decimate value"
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "onMouseDown",
+      "hash": "#onMouseDown",
+      "desc": "Invoked on mouse down"
+    },
+    {
+      "section": "Methods",
+      "name": "onMouseMove",
+      "hash": "#onMouseMove",
+      "desc": "Invoked on mouse move"
+    },
+    {
+      "section": "Methods",
+      "name": "onMouseUp",
+      "hash": "#onMouseUp",
+      "desc": "Invoked on mouse up"
+    }
+  ]
+}

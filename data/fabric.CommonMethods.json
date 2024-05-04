@@ -1,0 +1,29 @@
+{
+  "file": "fabric.CommonMethods.html",
+  "props": [
+    {
+      "section": "Methods",
+      "name": "_setOptions",
+      "hash": "#._setOptions",
+      "desc": "Sets object's properties from options"
+    },
+    {
+      "section": "Methods",
+      "name": "get",
+      "hash": "#.get",
+      "desc": "Basic getter"
+    },
+    {
+      "section": "Methods",
+      "name": "set",
+      "hash": "#.set",
+      "desc": "Sets property to a given value. When changing position/dimension -related properties (left, top, scale, angle, etc.) `set` does not update position of object's borders/controls. If you need to update those, call `setCoords()`."
+    },
+    {
+      "section": "Methods",
+      "name": "toggle",
+      "hash": "#.toggle",
+      "desc": "Toggles specified property from `true` to `false` or from `false` to `true`"
+    }
+  ]
+}

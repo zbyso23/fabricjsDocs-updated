@@ -1,0 +1,83 @@
+{
+  "file": "fabric.Shadow.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new Shadow",
+      "hash": "#Shadow",
+      "desc": "Shadow class"
+    },
+    {
+      "section": "Members",
+      "name": "reOffsetsAndBlur",
+      "hash": "#.reOffsetsAndBlur",
+      "desc": "Regex matching shadow offsetX, offsetY and blur (ex: \"2px 2px 10px rgba(0,0,0,0.2)\", \"rgb(0,255,0) 2px 2px\")"
+    },
+    {
+      "section": "Members",
+      "name": "affectStroke",
+      "hash": "#affectStroke",
+      "desc": "Whether the shadow should affect stroke operations"
+    },
+    {
+      "section": "Members",
+      "name": "blur",
+      "hash": "#blur",
+      "desc": "Shadow blur"
+    },
+    {
+      "section": "Members",
+      "name": "color",
+      "hash": "#color",
+      "desc": "Shadow color"
+    },
+    {
+      "section": "Members",
+      "name": "includeDefaultValues",
+      "hash": "#includeDefaultValues",
+      "desc": "Indicates whether toObject should include default values"
+    },
+    {
+      "section": "Members",
+      "name": "nonScaling",
+      "hash": "#nonScaling",
+      "desc": "When `false`, the shadow will scale with the object. When `true`, the shadow's offsetX, offsetY, and blur will not be affected by the object's scale. default to false"
+    },
+    {
+      "section": "Members",
+      "name": "offsetX",
+      "hash": "#offsetX",
+      "desc": "Shadow horizontal offset"
+    },
+    {
+      "section": "Members",
+      "name": "offsetY",
+      "hash": "#offsetY",
+      "desc": "Shadow vertical offset"
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "toObject",
+      "hash": "#toObject",
+      "desc": "Returns object representation of a shadow"
+    },
+    {
+      "section": "Methods",
+      "name": "toString",
+      "hash": "#toString",
+      "desc": "Returns a string representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "toSVG",
+      "hash": "#toSVG",
+      "desc": "Returns SVG representation of a shadow"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "file": "fabric.util.object.html",
+  "props": [
+    {
+      "section": "Methods",
+      "name": "clone",
+      "hash": "#.clone",
+      "desc": "Creates an empty object and copies all enumerable properties of another object to it This method is mostly for internal use, and not intended for duplicating shapes in canvas."
+    },
+    {
+      "section": "Methods",
+      "name": "extend",
+      "hash": "#.extend",
+      "desc": "Copies all enumerable properties of one js object to another this does not and cannot compete with generic utils. Does not clone or extend fabric.Object subclasses. This is mostly for internal use and has extra handling for fabricJS objects it skips the canvas and group properties in deep cloning."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "file": "fabric.Collection.html",
+  "props": [
+    {
+      "section": "Methods",
+      "name": "add",
+      "hash": "#.add",
+      "desc": "Adds objects to collection, Canvas or Group, then renders canvas (if `renderOnAddRemove` is not `false`). in case of Group no changes to bounding box are made. Objects should be instances of (or inherit from) fabric.Object Use of this function is highly discouraged for groups. you can add a bunch of objects with the add method but then you NEED to run a addWithUpdate call for the Group class or position/bbox will be wrong."
+    },
+    {
+      "section": "Methods",
+      "name": "complexity",
+      "hash": "#.complexity",
+      "desc": "Returns number representation of a collection complexity"
+    },
+    {
+      "section": "Methods",
+      "name": "contains",
+      "hash": "#.contains",
+      "desc": "Returns true if collection contains an object"
+    },
+    {
+      "section": "Methods",
+      "name": "forEachObject",
+      "hash": "#.forEachObject",
+      "desc": "Executes given function for each object in this group"
+    },
+    {
+      "section": "Methods",
+      "name": "getObjects",
+      "hash": "#.getObjects",
+      "desc": "Returns an array of children objects of this instance Type parameter introduced in 1.3.10 since 2.3.5 this method return always a COPY of the array;"
+    },
+    {
+      "section": "Methods",
+      "name": "insertAt",
+      "hash": "#.insertAt",
+      "desc": "Inserts an object into collection at specified index, then renders canvas (if `renderOnAddRemove` is not `false`) An object should be an instance of (or inherit from) fabric.Object Use of this function is highly discouraged for groups. you can add a bunch of objects with the insertAt method but then you NEED to run a addWithUpdate call for the Group class or position/bbox will be wrong."
+    },
+    {
+      "section": "Methods",
+      "name": "isEmpty",
+      "hash": "#.isEmpty",
+      "desc": "Returns true if collection contains no objects"
+    },
+    {
+      "section": "Methods",
+      "name": "item",
+      "hash": "#.item",
+      "desc": "Returns object at specified index"
+    },
+    {
+      "section": "Methods",
+      "name": "remove",
+      "hash": "#.remove",
+      "desc": "Removes objects from a collection, then renders canvas (if `renderOnAddRemove` is not `false`)"
+    },
+    {
+      "section": "Methods",
+      "name": "size",
+      "hash": "#.size",
+      "desc": "Returns a size of a collection (i.e: length of an array containing its objects)"
+    }
+  ]
+}

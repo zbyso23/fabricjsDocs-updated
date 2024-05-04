@@ -1,0 +1,161 @@
+{
+  "file": "fabric.Image.filters.Resize.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new Resize",
+      "hash": "#Resize",
+      "desc": "Resize image filter class"
+    },
+    {
+      "section": "Members",
+      "name": "lanczosLobes",
+      "hash": "#lanczosLobes",
+      "desc": "LanczosLobes parameter for lanczos filter, valid for resizeType lanczos"
+    },
+    {
+      "section": "Members",
+      "name": "resizeType",
+      "hash": "#resizeType",
+      "desc": "Resize type for webgl resizeType is just lanczos, for canvas2d can be: bilinear, hermite, sliceHack, lanczos."
+    },
+    {
+      "section": "Members",
+      "name": "scaleX",
+      "hash": "#scaleX",
+      "desc": "Scale factor for resizing, x axis"
+    },
+    {
+      "section": "Members",
+      "name": "scaleY",
+      "hash": "#scaleY",
+      "desc": "Scale factor for resizing, y axis"
+    },
+    {
+      "section": "Members",
+      "name": "type",
+      "hash": "#type",
+      "desc": "Filter type"
+    },
+    {
+      "section": "Methods",
+      "name": "applyTo",
+      "hash": "#applyTo",
+      "desc": "Apply the resize filter to the image Determines whether to use WebGL or Canvas2D based on the options.webgl flag."
+    },
+    {
+      "section": "Methods",
+      "name": "applyTo2d",
+      "hash": "#applyTo2d",
+      "desc": "Applies filter to canvas element"
+    },
+    {
+      "section": "Methods",
+      "name": "applyToWebGL",
+      "hash": "#applyToWebGL",
+      "desc": "Apply this filter using webgl."
+    },
+    {
+      "section": "Methods",
+      "name": "bilinearFiltering",
+      "hash": "#bilinearFiltering",
+      "desc": "bilinearFiltering"
+    },
+    {
+      "section": "Methods",
+      "name": "createHelpLayer",
+      "hash": "#createHelpLayer",
+      "desc": "If needed by a 2d filter, this functions can create an helper canvas to be used remember that options.targetCanvas is available for use till end of chain."
+    },
+    {
+      "section": "Methods",
+      "name": "createProgram",
+      "hash": "#createProgram",
+      "desc": "Compile this filter's shader program."
+    },
+    {
+      "section": "Methods",
+      "name": "generateShader",
+      "hash": "#generateShader",
+      "desc": "Generate vertex and shader sources from the necessary steps numbers"
+    },
+    {
+      "section": "Methods",
+      "name": "getAttributeLocations",
+      "hash": "#getAttributeLocations",
+      "desc": "Return a map of attribute names to WebGLAttributeLocation objects."
+    },
+    {
+      "section": "Methods",
+      "name": "getUniformLocations",
+      "hash": "#getUniformLocations",
+      "desc": "Return WebGL uniform locations for this filter's shader."
+    },
+    {
+      "section": "Methods",
+      "name": "hermiteFastResize",
+      "hash": "#hermiteFastResize",
+      "desc": "hermiteFastResize"
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "isNeutralState",
+      "hash": "#isNeutralState",
+      "desc": "Generic isNeutral implementation for one parameter based filters. Used only in image applyFilters to discard filters that will not have an effect on the image Other filters may need their own version ( ColorMatrix, HueRotation, gamma, ComposedFilter )"
+    },
+    {
+      "section": "Methods",
+      "name": "lanczosResize",
+      "hash": "#lanczosResize",
+      "desc": "Filter lanczosResize"
+    },
+    {
+      "section": "Methods",
+      "name": "retrieveShader",
+      "hash": "#retrieveShader",
+      "desc": "Retrieves the cached shader."
+    },
+    {
+      "section": "Methods",
+      "name": "sendAttributeData",
+      "hash": "#sendAttributeData",
+      "desc": "Send attribute data from this filter to its shader program on the GPU."
+    },
+    {
+      "section": "Methods",
+      "name": "sendUniformData",
+      "hash": "#sendUniformData",
+      "desc": "Send data from this filter to its shader program's uniforms."
+    },
+    {
+      "section": "Methods",
+      "name": "setOptions",
+      "hash": "#setOptions",
+      "desc": "Sets filter's properties from options"
+    },
+    {
+      "section": "Methods",
+      "name": "sliceByTwo",
+      "hash": "#sliceByTwo",
+      "desc": "Filter sliceByTwo"
+    },
+    {
+      "section": "Methods",
+      "name": "toJSON",
+      "hash": "#toJSON",
+      "desc": "Returns a JSON representation of an instance"
+    },
+    {
+      "section": "Methods",
+      "name": "toObject",
+      "hash": "#toObject",
+      "desc": "Returns object representation of an instance"
+    }
+  ]
+}

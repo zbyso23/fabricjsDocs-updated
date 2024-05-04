@@ -1,0 +1,53 @@
+{
+  "file": "fabric.CircleBrush.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new CircleBrush",
+      "hash": "#CircleBrush",
+      "desc": "CircleBrush class"
+    },
+    {
+      "section": "Members",
+      "name": "width",
+      "hash": "#width",
+      "desc": "Width of a brush"
+    },
+    {
+      "section": "Methods",
+      "name": "addPoint",
+      "hash": "#addPoint",
+      "desc": null
+    },
+    {
+      "section": "Methods",
+      "name": "drawDot",
+      "hash": "#drawDot",
+      "desc": "Invoked inside on mouse down and mouse move"
+    },
+    {
+      "section": "Methods",
+      "name": "initialize",
+      "hash": "#initialize",
+      "desc": "Constructor"
+    },
+    {
+      "section": "Methods",
+      "name": "onMouseDown",
+      "hash": "#onMouseDown",
+      "desc": "Invoked on mouse down"
+    },
+    {
+      "section": "Methods",
+      "name": "onMouseMove",
+      "hash": "#onMouseMove",
+      "desc": "Invoked on mouse move"
+    },
+    {
+      "section": "Methods",
+      "name": "onMouseUp",
+      "hash": "#onMouseUp",
+      "desc": "Invoked on mouse up"
+    }
+  ]
+}

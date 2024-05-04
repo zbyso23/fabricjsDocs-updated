@@ -1,0 +1,59 @@
+{
+  "file": "fabric.BaseBrush.html",
+  "props": [
+    {
+      "section": "default",
+      "name": "new BaseBrush",
+      "hash": "#BaseBrush",
+      "desc": "BaseBrush class"
+    },
+    {
+      "section": "Members",
+      "name": "color",
+      "hash": "#color",
+      "desc": "Color of a brush"
+    },
+    {
+      "section": "Members",
+      "name": "limitedToCanvasSize",
+      "hash": "#limitedToCanvasSize",
+      "desc": "When `true`, the free drawing is limited to the whiteboard size. Default to false."
+    },
+    {
+      "section": "Members",
+      "name": "shadow",
+      "hash": "#shadow",
+      "desc": "Shadow object representing shadow of this shape."
+    },
+    {
+      "section": "Members",
+      "name": "strokeDashArray",
+      "hash": "#strokeDashArray",
+      "desc": "Stroke Dash Array."
+    },
+    {
+      "section": "Members",
+      "name": "strokeLineCap",
+      "hash": "#strokeLineCap",
+      "desc": "Line endings style of a brush (one of \"butt\", \"round\", \"square\")"
+    },
+    {
+      "section": "Members",
+      "name": "strokeLineJoin",
+      "hash": "#strokeLineJoin",
+      "desc": "Corner style of a brush (one of \"bevel\", \"round\", \"miter\")"
+    },
+    {
+      "section": "Members",
+      "name": "strokeMiterLimit",
+      "hash": "#strokeMiterLimit",
+      "desc": "Maximum miter length (used for strokeLineJoin = \"miter\") of a brush's"
+    },
+    {
+      "section": "Members",
+      "name": "width",
+      "hash": "#width",
+      "desc": "Width of a brush, has to be a Number, no string literals"
+    }
+  ]
+}
